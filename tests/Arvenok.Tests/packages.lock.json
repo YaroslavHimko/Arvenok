@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "arvenok.contracts": {
+        "type": "Project"
+      },
+      "arvenok.hosting": {
+        "type": "Project"
+      },
+      "arvenok.simulation": {
+        "type": "Project",
+        "dependencies": {
+          "Arvenok.Contracts": "[1.0.0, )"
+        }
+      }
+    }
+  }
+}

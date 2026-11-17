@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Arvenok PvP Prototype"
-run/main_scene="res://Arena.tscn"
+run/main_scene="res://Features/Arena/Arena.tscn"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 
 [display]
@@ -23,6 +23,11 @@ window/stretch/mode="canvas_items"
 [dotnet]
 
 project/assembly_name="Arvenok"
+project/solution_directory="../.."
+
+[physics]
+
+common/physics_ticks_per_second=60
 
 [rendering]
 

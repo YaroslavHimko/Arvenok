@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "components": [
+    {
+      "id": "game",
+      "path": "apps/game",
+      "owner": "game-runtime",
+      "status": "implemented",
+      "project": "apps/game/Arvenok.csproj",
+      "dependencies": ["contracts", "simulation", "hosting"]
+    },
+    {
+      "id": "contracts",
+      "path": "packages/Arvenok.Contracts",
+      "owner": "gameplay-foundations",
+      "status": "implemented",
+      "project": "packages/Arvenok.Contracts/Arvenok.Contracts.csproj",
+      "dependencies": []
+    },
+    {
+      "id": "simulation",
+      "path": "packages/Arvenok.Simulation",
+      "owner": "gameplay-foundations",
+      "status": "implemented",
+      "project": "packages/Arvenok.Simulation/Arvenok.Simulation.csproj",
+      "dependencies": ["contracts"]
+    },
+    {
+      "id": "hosting",
+      "path": "packages/Arvenok.Hosting",
+      "owner": "platform",
+      "status": "implemented",
+      "project": "packages/Arvenok.Hosting/Arvenok.Hosting.csproj",
+      "dependencies": []
+    },
+    {
+      "id": "regression-tests",
+      "path": "tests/Arvenok.Tests",
+      "owner": "quality",
+      "status": "implemented",
+      "project": "tests/Arvenok.Tests/Arvenok.Tests.csproj",
+      "dependencies": ["contracts", "simulation", "hosting"]
+    },
+    {
+      "id": "source-art",
+      "path": "content/art-source",
+      "owner": "technical-art",
+      "status": "reserved"
+    },
+    {
+      "id": "narrative",
+      "path": "content/narrative",
+      "owner": "narrative",
+      "status": "reserved"
+    },
+    {
+      "id": "localization",
+      "path": "content/localization",
+      "owner": "localization",
+      "status": "reserved"
+    },
+    {
+      "id": "online-services",
+      "path": "services",
+      "owner": "online-services",
+      "status": "reserved"
+    },
+    {
+      "id": "regional-infrastructure",
+      "path": "infrastructure",
+      "owner": "platform",
+      "status": "design-only"
+    }
+  ]
+}

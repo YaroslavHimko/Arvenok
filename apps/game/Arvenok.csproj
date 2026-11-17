@@ -1,0 +1,15 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Arvenok.Game</RootNamespace>
+    <!-- Godot's editor and export configurations have different package graphs. -->
+    <NuGetLockFilePath>packages.$(Configuration).lock.json</NuGetLockFilePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../packages/Arvenok.Contracts/Arvenok.Contracts.csproj" />
+    <ProjectReference Include="../../packages/Arvenok.Simulation/Arvenok.Simulation.csproj" />
+    <ProjectReference Include="../../packages/Arvenok.Hosting/Arvenok.Hosting.csproj" />
+  </ItemGroup>
+</Project>

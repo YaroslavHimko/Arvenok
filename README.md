@@ -1,74 +1,74 @@
-# ARVENOK — first playable PvP prototype
+# Arvenok
 
-**Arvenok is a WORKING TITLE only. Trademark and domain clearance NOT completed.**
+A modular foundation for an online game, with a working server-authoritative two-player arena. **Arvenok is a working title; trademark and domain clearance are not complete.**
 
-Godot **4.7.2 .NET** + C# targeting .NET 8. One authoritative headless server, up to 2 connected clients, and a deliberately tiny 2D arena.
+The repository separates engine-independent gameplay, Godot presentation and networking, authored content, online services, and infrastructure. The current executable is still a local prototype. Regional hosting is designed in documentation; authentication, persistence, matchmaking, fleet management, and production deployment are not implemented.
 
-## Install
+## Repository map
 
-1. Download **Godot 4.7.2 .NET**, *not* the normal Godot build.
-   https://godotengine.org/download/windows/
-2. Install a **.NET 8 or newer SDK** (plus the .NET 8 targeting pack if your SDK does not include it).
-   https://dotnet.microsoft.com/download
-3. Open this directory in Godot's Project Manager (Import -> choose `project.godot`).
-4. In Godot, build the C# solution via the **Build** button / **Project > Tools > C# > Build** depending on your editor layout.
-5. Optional: configure Godot Editor Settings > Dotnet > Editor > External Editor = VS Code; install the Microsoft C# extension.
-
-## Run locally on Windows
-
-Replace `godot` with the full path to your **Godot .NET executable** if it isn't on PATH.
-Open three terminal windows in this directory.
-
-**Window A: dedicated server**
-
-```powershell
-godot --headless --path . -- --server
+```text
+Arvenok.sln                    Build every C# project from here
+apps/game/                     Godot project; client and dedicated session host
+  project.godot                Import THIS file into Godot
+  Features/Arena/              Scene and networking/composition adapter
+    Presentation/              Client input and placeholder rendering
+  Assets/                      Runtime 2D, 3D, animation, audio and UI resources
+packages/
+  Arvenok.Contracts/           Immutable state shared across module boundaries
+  Arvenok.Simulation/          Authoritative rules; no engine or network dependency
+  Arvenok.Hosting/             Validated process configuration
+content/                       Authoring sources, narrative and localization
+services/                      Boundary for future independently deployed services
+infrastructure/                Regional deployment design and environment conventions
+tests/                         Engine-independent regression checks
+tools/                         Build, run, architecture and multiplayer smoke checks
+catalog/                       Component ownership and permitted project dependencies
+docs/                          Architecture, decisions, workflows and operations
+.github/                       CI, review template and code-owner setup template
 ```
 
-**Window B: client 1**
+## Start developing
+
+Use **Godot 4.7.2 .NET**, the **.NET 9.0.1xx SDK** selected by `global.json`, the **.NET 8 runtime/targeting pack**, and **Git LFS**. Engine and target versions are inherited from the prototype; version upgrades must update the lockfiles and pass validation together. The SDK version is a development tool choice, not a production support policy.
 
 ```powershell
-godot --path .
+git lfs install
+git lfs pull
+dotnet restore Arvenok.sln --locked-mode
+dotnet build Arvenok.sln --no-restore
+dotnet run --project tests/Arvenok.Tests --no-build
 ```
 
-**Window C: client 2**
+Import `apps/game/project.godot` into the Godot Project Manager. Open `Arvenok.sln` from the repository root in your C# IDE. The previous root `project.godot`, `Arena.cs`, and `Arena.tscn` have moved; remove the old Project Manager entry if it is still listed. Generated `.godot` caches are disposable and are not part of the migration.
+
+From the repository root, run these in three terminals (replace `godot` with your .NET engine executable):
 
 ```powershell
-godot --path .
+# Terminal 1: dedicated duel server, loopback UDP 7777
+godot --headless --path apps/game -- --server
+# Terminal 2: client
+godot --path apps/game
+# Terminal 3: another client
+godot --path apps/game
 ```
 
-If you get a missing C# assembly error, first build the project from the editor (or run `dotnet build`).
-The server listens on **UDP 7777** on localhost. No router or firewall forwarding is necessary for this local test.
+Left-click ground to move or an opponent to select them. Press **1** for melee or **2** for a spell. Damage interrupts casting; movement cancels your spell. Defeated players respawn after three seconds. All combat decisions run on the server.
 
-## Controls
+## Checks and working agreements
 
-- Left-click empty arena: **click-to-move** (server simulates movement).
-- Left-click opposing player's circle: **select target** (yellow ring).
-- Press **1**: melee strike, within 90 pixels, 15 damage, 0.8-second cooldown.
-- Press **2**: magic bolt, within 240 pixels, 1.25-second cast, 30 damage.
-- Damage interrupts casts. Moving cancels your own cast.
-- Defeated players revive after 3 seconds with full HP.
+```powershell
+./tools/validate.ps1
+./tools/validate.ps1 -Configuration Release
+./tools/smoke-game.ps1 -Godot godot
+```
 
-Both clients should see the same positions and hit points. Disconnecting a client removes that fighter on the other client. The server is **not a player**.
+Use PowerShell 7 (`pwsh`) on Linux/macOS; scripts also support Windows PowerShell 5.1. If your local Windows execution policy blocks repository scripts, a process-scoped invocation is `powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/validate.ps1`; this does not change the machine policy. The regression suite is an executable harness, run by `validate.ps1`, rather than a `dotnet test` project. The smoke check requires the Godot .NET executable and a built Debug project.
 
-## Scope / limitations
+- [Architecture and dependency boundaries](docs/architecture/README.md)
+- [Contribution and ownership rules](CONTRIBUTING.md)
+- [Art, animation, story and localization workflow](docs/contributing/content.md)
+- [Regional hosting and capacity design](docs/operations/regional-hosting.md)
+- [Local configuration and troubleshooting](docs/operations/local-development.md)
+- [Production milestones](docs/architecture/roadmap.md)
 
-- No authentication; use only on trusted local networking for now.
-- The code is illustrative prototype code and has **not been compiled in this environment**. If your installed Godot SDK API differs, fix compilation before continuing.
-- Server-authoritative movement, combat, hit points, cast timer, and cooldowns.
-- Networking uses reliable RPCs for player intent and unreliable RPCs for state snapshots.
-- No client interpolation, lag compensation, pathfinding, collisions, obstacles, replication batching, persistence, guilds, equipment, or security hardening yet.
-
-## The next milestone
-
-1. Add pathfinding/navigation and movement interpolation.
-2. Add attack feedback, cast bars, cooldown display and server-side input throttling.
-3. Add one Warrior, one Mage with differing skills.
-4. Add a third/fourth client for 2v2 teams.
-5. Only then add equipment and SQLite persistence.
-
-## Why this is shaped this way
-
-- A tiny playable duel proves the core combat loop without the pressure of building an MMORPG.
-- Both clients share a single stable `Arena.tscn` scene path, which is required for Godot's high-level RPCs.
-- Incoming client RPCs submit *intent*. The server obtains the sender ID from the transport (not user-supplied parameters) and checks distance, cooldown, and health before changing game state.
+CI builds Debug and Release and runs the regression suite on Windows and Linux. The solution maps Release to Godot's `ExportRelease`; the game has configuration-specific lockfiles because editor and export dependencies differ. Native Godot smoke checks are a separate command until an engine-equipped CI runner is configured. The [code-owner template](.github/CODEOWNERS.example) needs real organization teams and repository branch protection before owner review can be enforced.

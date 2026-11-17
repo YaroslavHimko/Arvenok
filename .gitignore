@@ -5,3 +5,16 @@
 **/bin/
 **/obj/
 *.user
+.cache/
+artifacts/
+TestResults/
+*.log
+.env
+.env.*
+!.env.example
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+!*.example.tfvars
+export_credentials.cfg

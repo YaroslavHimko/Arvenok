@@ -1,0 +1,19 @@
+# Replace ORGANIZATION/team names with real teams that have repository access,
+# then rename this file to CODEOWNERS and enable required owner review in branch rules.
+# This template does not activate GitHub code-owner enforcement.
+* @ORGANIZATION/maintainers
+/apps/game/ @ORGANIZATION/game-runtime
+/apps/game/Features/**/Presentation/ @ORGANIZATION/client-presentation
+/apps/game/Assets/ @ORGANIZATION/technical-art
+/packages/Arvenok.Contracts/ @ORGANIZATION/gameplay-foundations @ORGANIZATION/game-runtime
+/packages/Arvenok.Simulation/ @ORGANIZATION/gameplay-foundations
+/packages/Arvenok.Hosting/ @ORGANIZATION/platform
+/content/art-source/ @ORGANIZATION/technical-art
+/content/narrative/ @ORGANIZATION/narrative
+/content/localization/ @ORGANIZATION/localization
+/services/ @ORGANIZATION/online-services
+/infrastructure/ @ORGANIZATION/platform
+/tests/ @ORGANIZATION/quality
+/tools/ @ORGANIZATION/developer-experience
+/catalog/ @ORGANIZATION/maintainers
+/.github/ @ORGANIZATION/maintainers

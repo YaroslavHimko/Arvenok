@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{7E0F51AE-E483-4CC0-A5EF-482BEACA0931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arvenok", "apps\game\Arvenok.csproj", "{7F4F8DAF-693B-41E5-8CA5-9592B74EF723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{824C955C-DF91-4081-9446-D4BD9674BB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arvenok.Contracts", "packages\Arvenok.Contracts\Arvenok.Contracts.csproj", "{03BF359D-2B74-416E-8705-D5B448A2F316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arvenok.Simulation", "packages\Arvenok.Simulation\Arvenok.Simulation.csproj", "{99E94AE3-E476-4BF8-A3D9-C1A66F8CDCFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arvenok.Hosting", "packages\Arvenok.Hosting\Arvenok.Hosting.csproj", "{2CD16567-8812-489D-8C00-8FC502C667F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED5752C4-B984-4404-914E-E4155D6E1AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arvenok.Tests", "tests\Arvenok.Tests\Arvenok.Tests.csproj", "{0CD71D9A-0307-44C8-9FB3-646B8522965C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F4F8DAF-693B-41E5-8CA5-9592B74EF723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4F8DAF-693B-41E5-8CA5-9592B74EF723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4F8DAF-693B-41E5-8CA5-9592B74EF723}.Release|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{7F4F8DAF-693B-41E5-8CA5-9592B74EF723}.Release|Any CPU.Build.0 = ExportRelease|Any CPU
+		{03BF359D-2B74-416E-8705-D5B448A2F316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BF359D-2B74-416E-8705-D5B448A2F316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BF359D-2B74-416E-8705-D5B448A2F316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BF359D-2B74-416E-8705-D5B448A2F316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E94AE3-E476-4BF8-A3D9-C1A66F8CDCFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E94AE3-E476-4BF8-A3D9-C1A66F8CDCFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E94AE3-E476-4BF8-A3D9-C1A66F8CDCFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E94AE3-E476-4BF8-A3D9-C1A66F8CDCFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD16567-8812-489D-8C00-8FC502C667F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD16567-8812-489D-8C00-8FC502C667F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD16567-8812-489D-8C00-8FC502C667F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD16567-8812-489D-8C00-8FC502C667F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD71D9A-0307-44C8-9FB3-646B8522965C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD71D9A-0307-44C8-9FB3-646B8522965C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD71D9A-0307-44C8-9FB3-646B8522965C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD71D9A-0307-44C8-9FB3-646B8522965C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F4F8DAF-693B-41E5-8CA5-9592B74EF723} = {7E0F51AE-E483-4CC0-A5EF-482BEACA0931}
+		{03BF359D-2B74-416E-8705-D5B448A2F316} = {824C955C-DF91-4081-9446-D4BD9674BB74}
+		{99E94AE3-E476-4BF8-A3D9-C1A66F8CDCFF} = {824C955C-DF91-4081-9446-D4BD9674BB74}
+		{2CD16567-8812-489D-8C00-8FC502C667F8} = {824C955C-DF91-4081-9446-D4BD9674BB74}
+		{0CD71D9A-0307-44C8-9FB3-646B8522965C} = {ED5752C4-B984-4404-914E-E4155D6E1AFA}
+	EndGlobalSection
+EndGlobal

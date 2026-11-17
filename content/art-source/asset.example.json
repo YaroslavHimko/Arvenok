@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "prop-example-01",
+  "owner": "technical-art",
+  "status": "example-only",
+  "sourcePath": "content/art-source/3d/example/prop-example-01/source.blend",
+  "runtimePath": "apps/game/Assets/Art3D/example/prop-example-01/model.glb",
+  "rightsReference": "REPLACE_WITH_LICENSE_OR_INTERNAL_RIGHTS_RECORD",
+  "author": "REPLACE_WITH_CREATOR",
+  "toolVersion": "REPLACE_WITH_EXACT_TOOL_VERSION",
+  "exportRecipe": "REPLACE_WITH_REPRODUCIBLE_EXPORT_STEPS",
+  "units": "meters",
+  "dependencies": [],
+  "budgets": {
+    "triangles": null,
+    "textureMemoryMiB": null,
+    "bones": null
+  }
+}
