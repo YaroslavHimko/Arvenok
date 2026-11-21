@@ -1,0 +1,915 @@
+{
+  "format_version": "1.0",
+  "cell_px": [
+    96,
+    96
+  ],
+  "layout": "horizontal_strip_no_gaps",
+  "frame_origin": "top_left",
+  "world_origin": "feet_bottom_center",
+  "authoritative_timing": "gameplay driven by world server; sprites cosmetic",
+  "characters": {
+    "warrior": {
+      "idle": {
+        "down": {
+          "file": "assets/animations/characters/warrior/idle_down.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/idle_left.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/idle_right.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/idle_up.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        }
+      },
+      "walk": {
+        "down": {
+          "file": "assets/animations/characters/warrior/walk_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/walk_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/walk_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/walk_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        }
+      },
+      "basic_attack": {
+        "down": {
+          "file": "assets/animations/characters/warrior/basic_attack_down.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false,
+          "pose_source": "individual generated action key poses; 8 frames from six illustrated poses"
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/basic_attack_left.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/basic_attack_right.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/basic_attack_up.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        }
+      },
+      "cast": {
+        "down": {
+          "file": "assets/animations/characters/warrior/cast_down.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true,
+          "pose_source": "individual generated action key poses; 8 frames from six illustrated poses"
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/cast_left.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/cast_right.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/cast_up.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        }
+      },
+      "interrupt": {
+        "down": {
+          "file": "assets/animations/characters/warrior/interrupt_down.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/interrupt_left.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/interrupt_right.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/interrupt_up.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        }
+      },
+      "defend": {
+        "down": {
+          "file": "assets/animations/characters/warrior/defend_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/defend_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/defend_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/defend_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "hurt": {
+        "down": {
+          "file": "assets/animations/characters/warrior/hurt_down.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/hurt_left.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/hurt_right.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/hurt_up.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        }
+      },
+      "death": {
+        "down": {
+          "file": "assets/animations/characters/warrior/death_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/warrior/death_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/warrior/death_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/warrior/death_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "mage": {
+      "idle": {
+        "down": {
+          "file": "assets/animations/characters/mage/idle_down.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/idle_left.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/idle_right.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/idle_up.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        }
+      },
+      "walk": {
+        "down": {
+          "file": "assets/animations/characters/mage/walk_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/walk_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/walk_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/walk_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        }
+      },
+      "basic_attack": {
+        "down": {
+          "file": "assets/animations/characters/mage/basic_attack_down.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false,
+          "pose_source": "individual generated action key poses; 8 frames from six illustrated poses"
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/basic_attack_left.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/basic_attack_right.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/basic_attack_up.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        }
+      },
+      "cast": {
+        "down": {
+          "file": "assets/animations/characters/mage/cast_down.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true,
+          "pose_source": "individual generated action key poses; 8 frames from six illustrated poses"
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/cast_left.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/cast_right.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/cast_up.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        }
+      },
+      "interrupt": {
+        "down": {
+          "file": "assets/animations/characters/mage/interrupt_down.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/interrupt_left.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/interrupt_right.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/interrupt_up.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        }
+      },
+      "defend": {
+        "down": {
+          "file": "assets/animations/characters/mage/defend_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/defend_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/defend_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/defend_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "hurt": {
+        "down": {
+          "file": "assets/animations/characters/mage/hurt_down.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/hurt_left.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/hurt_right.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/hurt_up.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        }
+      },
+      "death": {
+        "down": {
+          "file": "assets/animations/characters/mage/death_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/mage/death_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/mage/death_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/mage/death_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "archer": {
+      "idle": {
+        "down": {
+          "file": "assets/animations/characters/archer/idle_down.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/idle_left.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/idle_right.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/idle_up.png",
+          "frames": 8,
+          "fps": 5,
+          "loop": true
+        }
+      },
+      "walk": {
+        "down": {
+          "file": "assets/animations/characters/archer/walk_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/walk_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/walk_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/walk_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        }
+      },
+      "basic_attack": {
+        "down": {
+          "file": "assets/animations/characters/archer/basic_attack_down.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false,
+          "pose_source": "individual generated action key poses; 8 frames from six illustrated poses"
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/basic_attack_left.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/basic_attack_right.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/basic_attack_up.png",
+          "frames": 8,
+          "fps": 12,
+          "loop": false
+        }
+      },
+      "cast": {
+        "down": {
+          "file": "assets/animations/characters/archer/cast_down.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true,
+          "pose_source": "individual generated action key poses; 8 frames from six illustrated poses"
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/cast_left.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/cast_right.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/cast_up.png",
+          "frames": 8,
+          "fps": 9,
+          "loop": true
+        }
+      },
+      "interrupt": {
+        "down": {
+          "file": "assets/animations/characters/archer/interrupt_down.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/interrupt_left.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/interrupt_right.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/interrupt_up.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        }
+      },
+      "defend": {
+        "down": {
+          "file": "assets/animations/characters/archer/defend_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/defend_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/defend_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/defend_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "hurt": {
+        "down": {
+          "file": "assets/animations/characters/archer/hurt_down.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/hurt_left.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/hurt_right.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/hurt_up.png",
+          "frames": 8,
+          "fps": 14,
+          "loop": false
+        }
+      },
+      "death": {
+        "down": {
+          "file": "assets/animations/characters/archer/death_down.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "left": {
+          "file": "assets/animations/characters/archer/death_left.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "right": {
+          "file": "assets/animations/characters/archer/death_right.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        },
+        "up": {
+          "file": "assets/animations/characters/archer/death_up.png",
+          "frames": 8,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    }
+  },
+  "effects": {
+    "basic/sword_slash": {
+      "file": "assets/animations/vfx/basic/sword_slash.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "basic/magic_orb": {
+      "file": "assets/animations/vfx/basic/magic_orb.png",
+      "frames": 8,
+      "fps": 10,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "basic/arrow": {
+      "file": "assets/animations/vfx/basic/arrow.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "warrior/crushing_blow": {
+      "file": "assets/animations/vfx/warrior/crushing_blow.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "warrior/crushing_impact": {
+      "file": "assets/animations/vfx/warrior/crushing_impact.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "warrior/rush": {
+      "file": "assets/animations/vfx/warrior/rush.png",
+      "frames": 8,
+      "fps": 14,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "warrior/shield_bash": {
+      "file": "assets/animations/vfx/warrior/shield_bash.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "warrior/guard": {
+      "file": "assets/animations/vfx/warrior/guard.png",
+      "frames": 8,
+      "fps": 10,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "mage/firebolt": {
+      "file": "assets/animations/vfx/mage/firebolt.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "mage/firebolt_impact": {
+      "file": "assets/animations/vfx/mage/firebolt_impact.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "mage/blink": {
+      "file": "assets/animations/vfx/mage/blink.png",
+      "frames": 8,
+      "fps": 14,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "mage/counterspell": {
+      "file": "assets/animations/vfx/mage/counterspell.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "mage/arcane_ward": {
+      "file": "assets/animations/vfx/mage/arcane_ward.png",
+      "frames": 8,
+      "fps": 10,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "archer/power_shot": {
+      "file": "assets/animations/vfx/archer/power_shot.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "archer/backstep": {
+      "file": "assets/animations/vfx/archer/backstep.png",
+      "frames": 8,
+      "fps": 14,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "archer/disrupting_arrow": {
+      "file": "assets/animations/vfx/archer/disrupting_arrow.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "archer/disrupting_impact": {
+      "file": "assets/animations/vfx/archer/disrupting_impact.png",
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    },
+    "archer/evasive_stance": {
+      "file": "assets/animations/vfx/archer/evasive_stance.png",
+      "frames": 8,
+      "fps": 10,
+      "loop": true,
+      "playback": "cosmetic visual only; do not resolve hits client-side"
+    }
+  },
+  "monsters": {
+    "slime": {
+      "idle": {
+        "file": "assets/animations/monsters/slime/idle.png",
+        "frames": 8,
+        "fps": 8,
+        "loop": true
+      },
+      "move": {
+        "file": "assets/animations/monsters/slime/move.png",
+        "frames": 8,
+        "fps": 9,
+        "loop": true
+      },
+      "attack": {
+        "file": "assets/animations/monsters/slime/attack.png",
+        "frames": 8,
+        "fps": 12,
+        "loop": false
+      },
+      "hurt": {
+        "file": "assets/animations/monsters/slime/hurt.png",
+        "frames": 8,
+        "fps": 14,
+        "loop": false
+      },
+      "death": {
+        "file": "assets/animations/monsters/slime/death.png",
+        "frames": 8,
+        "fps": 10,
+        "loop": false
+      }
+    },
+    "mushroom": {
+      "idle": {
+        "file": "assets/animations/monsters/mushroom/idle.png",
+        "frames": 8,
+        "fps": 8,
+        "loop": true
+      },
+      "move": {
+        "file": "assets/animations/monsters/mushroom/move.png",
+        "frames": 8,
+        "fps": 9,
+        "loop": true
+      },
+      "attack": {
+        "file": "assets/animations/monsters/mushroom/attack.png",
+        "frames": 8,
+        "fps": 12,
+        "loop": false
+      },
+      "hurt": {
+        "file": "assets/animations/monsters/mushroom/hurt.png",
+        "frames": 8,
+        "fps": 14,
+        "loop": false
+      },
+      "death": {
+        "file": "assets/animations/monsters/mushroom/death.png",
+        "frames": 8,
+        "fps": 10,
+        "loop": false
+      }
+    },
+    "sprout": {
+      "idle": {
+        "file": "assets/animations/monsters/sprout/idle.png",
+        "frames": 8,
+        "fps": 8,
+        "loop": true
+      },
+      "move": {
+        "file": "assets/animations/monsters/sprout/move.png",
+        "frames": 8,
+        "fps": 9,
+        "loop": true
+      },
+      "attack": {
+        "file": "assets/animations/monsters/sprout/attack.png",
+        "frames": 8,
+        "fps": 12,
+        "loop": false
+      },
+      "hurt": {
+        "file": "assets/animations/monsters/sprout/hurt.png",
+        "frames": 8,
+        "fps": 14,
+        "loop": false
+      },
+      "death": {
+        "file": "assets/animations/monsters/sprout/death.png",
+        "frames": 8,
+        "fps": 10,
+        "loop": false
+      }
+    },
+    "wolf": {
+      "idle": {
+        "file": "assets/animations/monsters/wolf/idle.png",
+        "frames": 8,
+        "fps": 8,
+        "loop": true
+      },
+      "move": {
+        "file": "assets/animations/monsters/wolf/move.png",
+        "frames": 8,
+        "fps": 9,
+        "loop": true
+      },
+      "attack": {
+        "file": "assets/animations/monsters/wolf/attack.png",
+        "frames": 8,
+        "fps": 12,
+        "loop": false
+      },
+      "hurt": {
+        "file": "assets/animations/monsters/wolf/hurt.png",
+        "frames": 8,
+        "fps": 14,
+        "loop": false
+      },
+      "death": {
+        "file": "assets/animations/monsters/wolf/death.png",
+        "frames": 8,
+        "fps": 10,
+        "loop": false
+      }
+    }
+  },
+  "notes": [
+    "This pack is an import-ready animated placeholder extension of Woodvale Art Pack v0.1; it uses original directional idle artwork procedurally posed with squash, bob, lean and highlights. It is NOT hand-drawn per-frame animation.",
+    "All sprite sheets: 768\u00d796 RGBA, 8 cells of 96\u00d796, from left to right, no margins/gutters. Collision and attack hitboxes stay attached to gameplay entity, not transformed sprite pixels.",
+    "Do not use character animation frames to infer gameplay timing or authoritative positions. Movement, casts, interrupts, cooldowns and damage are resolved on world server.",
+    "VFX sheet gives animated local appearance only. Firebolt and arrows require world-space travel controlled by server authoritative projectile event or server resolved attack timing.",
+    "Animations can be improved later with dedicated hand-drawn frames without changing clip names, gameplay logic or net protocol.",
+    "Down-facing primary attack/cast animations are extracted illustrated keyposes. Side/back direction animations use posed interpolation based on earlier directional idle sprites until individually illustrated action poses exist."
+  ]
+}

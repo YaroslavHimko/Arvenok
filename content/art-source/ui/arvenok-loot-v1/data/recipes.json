@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "recipes": [
+    {
+      "recipe_id": "craft.ironbark_sword",
+      "scroll_item_id": "recipe.ironbark_sword",
+      "output_item_id": "equipment.ironbark_sword",
+      "output_quantity": 1,
+      "ingredients": [
+        {
+          "item_id": "material.stone_shard",
+          "quantity": 12
+        },
+        {
+          "item_id": "material.wolf_fang",
+          "quantity": 7
+        },
+        {
+          "item_id": "material.warrior_crest",
+          "quantity": 1
+        }
+      ],
+      "station_requirement": null,
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true,
+      "learned_recipe": false
+    },
+    {
+      "recipe_id": "craft.warden_mail",
+      "scroll_item_id": "recipe.warden_mail",
+      "output_item_id": "equipment.warden_mail",
+      "output_quantity": 1,
+      "ingredients": [
+        {
+          "item_id": "material.wolf_pelt",
+          "quantity": 10
+        },
+        {
+          "item_id": "material.sprout_fiber",
+          "quantity": 6
+        },
+        {
+          "item_id": "material.warrior_crest",
+          "quantity": 1
+        }
+      ],
+      "station_requirement": null,
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true,
+      "learned_recipe": false
+    },
+    {
+      "recipe_id": "craft.runestone_staff",
+      "scroll_item_id": "recipe.runestone_staff",
+      "output_item_id": "equipment.runestone_staff",
+      "output_quantity": 1,
+      "ingredients": [
+        {
+          "item_id": "material.mushroom_spores",
+          "quantity": 12
+        },
+        {
+          "item_id": "material.slime_gel",
+          "quantity": 8
+        },
+        {
+          "item_id": "material.mage_sigil",
+          "quantity": 1
+        }
+      ],
+      "station_requirement": null,
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true,
+      "learned_recipe": false
+    },
+    {
+      "recipe_id": "craft.runewoven_robe",
+      "scroll_item_id": "recipe.runewoven_robe",
+      "output_item_id": "equipment.runewoven_robe",
+      "output_quantity": 1,
+      "ingredients": [
+        {
+          "item_id": "material.mushroom_spores",
+          "quantity": 10
+        },
+        {
+          "item_id": "material.sprout_fiber",
+          "quantity": 8
+        },
+        {
+          "item_id": "material.mage_sigil",
+          "quantity": 1
+        }
+      ],
+      "station_requirement": null,
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true,
+      "learned_recipe": false
+    },
+    {
+      "recipe_id": "craft.ashwood_recurve",
+      "scroll_item_id": "recipe.ashwood_recurve",
+      "output_item_id": "equipment.ashwood_recurve",
+      "output_quantity": 1,
+      "ingredients": [
+        {
+          "item_id": "material.sprout_fiber",
+          "quantity": 12
+        },
+        {
+          "item_id": "material.wolf_fang",
+          "quantity": 8
+        },
+        {
+          "item_id": "material.ranger_sigil",
+          "quantity": 1
+        }
+      ],
+      "station_requirement": null,
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true,
+      "learned_recipe": false
+    },
+    {
+      "recipe_id": "craft.ranger_jerkin",
+      "scroll_item_id": "recipe.ranger_jerkin",
+      "output_item_id": "equipment.ranger_jerkin",
+      "output_quantity": 1,
+      "ingredients": [
+        {
+          "item_id": "material.wolf_pelt",
+          "quantity": 10
+        },
+        {
+          "item_id": "material.sprout_fiber",
+          "quantity": 8
+        },
+        {
+          "item_id": "material.ranger_sigil",
+          "quantity": 1
+        }
+      ],
+      "station_requirement": null,
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true,
+      "learned_recipe": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "assetId": "woodvale-progression-v01",
+  "sourceArchive": "Woodvale_XP_Skill_Progression_UI_v01.zip",
+  "provenance": "User-supplied progression specification and seven prototype UI decorations. Original handoff, manifest and concept preview retained here.",
+  "rightsReference": "Original pack documentation; no additional licensing or production art acceptance asserted.",
+  "runtimeRoot": "apps/game/Assets/UI/woodvale-progression",
+  "importRecipe": "Copy PNGs byte-for-byte; lossless RGBA, no mipmaps, nearest-neighbor sampling. Native controls provide all text and input.",
+  "quality": "Approximate transparent decorative cutouts, not nine-patch skins or complete animation sheets.",
+  "budgetStatus": "Prototype collection; no production platform budget claimed."
+}

@@ -1,0 +1,930 @@
+{
+    "schemaVersion":  1,
+    "name":  "Woodvale clearing",
+    "widthTiles":  60,
+    "heightTiles":  40,
+    "tileSize":  32,
+    "bodyRadius":  12,
+    "rockFormations":  [
+                           [
+                               640,
+                               224,
+                               96,
+                               384
+                           ],
+                           [
+                               1056,
+                               704,
+                               352,
+                               96
+                           ],
+                           [
+                               1312,
+                               192,
+                               128,
+                               288
+                           ],
+                           [
+                               352,
+                               864,
+                               192,
+                               96
+                           ]
+                       ],
+    "protectedRegions":  [
+                             [
+                                 32,
+                                 32,
+                                 352,
+                                 352
+                             ]
+                         ],
+    "playerSpawns":  [
+                         [
+                             144,
+                             160
+                         ],
+                         [
+                             240,
+                             160
+                         ],
+                         [
+                             144,
+                             256
+                         ],
+                         [
+                             240,
+                             256
+                         ]
+                     ],
+    "groundVariants":  [
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass",
+                           "grass_alt",
+                           "grass_bright"
+                       ],
+    "terrainPatches":  [
+                           {
+                               "tile":  "stone",
+                               "rect":  [
+                                            3,
+                                            3,
+                                            7,
+                                            7
+                                        ]
+                           },
+                           {
+                               "tile":  "cobble",
+                               "rect":  [
+                                            4,
+                                            4,
+                                            5,
+                                            5
+                                        ]
+                           },
+                           {
+                               "tile":  "dirt",
+                               "rect":  [
+                                            7,
+                                            10,
+                                            2,
+                                            10
+                                        ]
+                           },
+                           {
+                               "tile":  "trail",
+                               "rect":  [
+                                            8,
+                                            10,
+                                            1,
+                                            10
+                                        ]
+                           },
+                           {
+                               "tile":  "dirt",
+                               "rect":  [
+                                            7,
+                                            19,
+                                            40,
+                                            2
+                                        ]
+                           },
+                           {
+                               "tile":  "trail",
+                               "rect":  [
+                                            7,
+                                            20,
+                                            40,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "dirt_alt",
+                               "rect":  [
+                                            27,
+                                            8,
+                                            2,
+                                            12
+                                        ]
+                           },
+                           {
+                               "tile":  "dirt",
+                               "rect":  [
+                                            27,
+                                            20,
+                                            2,
+                                            15
+                                        ]
+                           },
+                           {
+                               "tile":  "stone",
+                               "rect":  [
+                                            26,
+                                            9,
+                                            4,
+                                            3
+                                        ]
+                           },
+                           {
+                               "tile":  "wood",
+                               "rect":  [
+                                            6,
+                                            10,
+                                            4,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "water_0",
+                               "rect":  [
+                                            14,
+                                            7,
+                                            5,
+                                            5
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_n",
+                               "rect":  [
+                                            14,
+                                            7,
+                                            5,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_s",
+                               "rect":  [
+                                            14,
+                                            11,
+                                            5,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_w",
+                               "rect":  [
+                                            14,
+                                            8,
+                                            1,
+                                            3
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_e",
+                               "rect":  [
+                                            18,
+                                            8,
+                                            1,
+                                            3
+                                        ]
+                           },
+                           {
+                               "tile":  "water_lily",
+                               "rect":  [
+                                            16,
+                                            9,
+                                            1,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "water_0",
+                               "rect":  [
+                                            47,
+                                            6,
+                                            9,
+                                            9
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_n",
+                               "rect":  [
+                                            47,
+                                            6,
+                                            9,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_s",
+                               "rect":  [
+                                            47,
+                                            14,
+                                            9,
+                                            1
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_w",
+                               "rect":  [
+                                            47,
+                                            7,
+                                            1,
+                                            7
+                                        ]
+                           },
+                           {
+                               "tile":  "shore_e",
+                               "rect":  [
+                                            55,
+                                            7,
+                                            1,
+                                            7
+                                        ]
+                           },
+                           {
+                               "tile":  "water_lily",
+                               "rect":  [
+                                            49,
+                                            8,
+                                            1,
+                                            1
+                                        ]
+                           }
+                       ],
+    "propFootprints":  {
+                           "tree_green":  [
+                                              -9,
+                                              -10,
+                                              18,
+                                              12
+                                          ],
+                           "tree_gold":  [
+                                             -9,
+                                             -10,
+                                             18,
+                                             12
+                                         ],
+                           "tree_pink":  [
+                                             -9,
+                                             -10,
+                                             18,
+                                             12
+                                         ],
+                           "pine":  [
+                                        -8,
+                                        -9,
+                                        16,
+                                        11
+                                    ],
+                           "rock_large":  [
+                                              -25,
+                                              -23,
+                                              50,
+                                              23
+                                          ],
+                           "rock_small":  [
+                                              -10,
+                                              -13,
+                                              20,
+                                              13
+                                          ],
+                           "bush_green":  [
+                                              -14,
+                                              -11,
+                                              28,
+                                              12
+                                          ],
+                           "flowers":  null,
+                           "fence":  [
+                                         -39,
+                                         -12,
+                                         78,
+                                         12
+                                     ],
+                           "barrel":  [
+                                          -12,
+                                          -20,
+                                          24,
+                                          20
+                                      ]
+                       },
+    "props":  [
+                  {
+                      "id":  "prop-001",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       80,
+                                       118
+                                   ]
+                  },
+                  {
+                      "id":  "prop-002",
+                      "asset":  "tree_pink",
+                      "position":  [
+                                       350,
+                                       134
+                                   ]
+                  },
+                  {
+                      "id":  "prop-003",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       85,
+                                       352
+                                   ]
+                  },
+                  {
+                      "id":  "prop-004",
+                      "asset":  "pine",
+                      "position":  [
+                                       365,
+                                       315
+                                   ]
+                  },
+                  {
+                      "id":  "prop-005",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       480,
+                                       180
+                                   ]
+                  },
+                  {
+                      "id":  "prop-006",
+                      "asset":  "pine",
+                      "position":  [
+                                       592,
+                                       188
+                                   ]
+                  },
+                  {
+                      "id":  "prop-007",
+                      "asset":  "bush_green",
+                      "position":  [
+                                       416,
+                                       240
+                                   ]
+                  },
+                  {
+                      "id":  "prop-008",
+                      "asset":  "flowers",
+                      "position":  [
+                                       340,
+                                       218
+                                   ]
+                  },
+                  {
+                      "id":  "prop-009",
+                      "asset":  "flowers",
+                      "position":  [
+                                       90,
+                                       278
+                                   ]
+                  },
+                  {
+                      "id":  "prop-010",
+                      "asset":  "flowers",
+                      "position":  [
+                                       576,
+                                       416
+                                   ]
+                  },
+                  {
+                      "id":  "prop-011",
+                      "asset":  "flowers",
+                      "position":  [
+                                       290,
+                                       405
+                                   ]
+                  },
+                  {
+                      "id":  "prop-012",
+                      "asset":  "fence",
+                      "position":  [
+                                       86,
+                                       408
+                                   ]
+                  },
+                  {
+                      "id":  "prop-013",
+                      "asset":  "fence",
+                      "position":  [
+                                       168,
+                                       408
+                                   ]
+                  },
+                  {
+                      "id":  "prop-014",
+                      "asset":  "barrel",
+                      "position":  [
+                                       112,
+                                       360
+                                   ]
+                  },
+                  {
+                      "id":  "prop-015",
+                      "asset":  "barrel",
+                      "position":  [
+                                       90,
+                                       380
+                                   ]
+                  },
+                  {
+                      "id":  "prop-016",
+                      "asset":  "rock_small",
+                      "position":  [
+                                       416,
+                                       528
+                                   ]
+                  },
+                  {
+                      "id":  "prop-017",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       320,
+                                       520
+                                   ]
+                  },
+                  {
+                      "id":  "prop-018",
+                      "asset":  "bush_green",
+                      "position":  [
+                                       180,
+                                       565
+                                   ]
+                  },
+                  {
+                      "id":  "prop-019",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       88,
+                                       700
+                                   ]
+                  },
+                  {
+                      "id":  "prop-020",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       80,
+                                       864
+                                   ]
+                  },
+                  {
+                      "id":  "prop-021",
+                      "asset":  "tree_pink",
+                      "position":  [
+                                       208,
+                                       1008
+                                   ]
+                  },
+                  {
+                      "id":  "prop-022",
+                      "asset":  "pine",
+                      "position":  [
+                                       608,
+                                       1040
+                                   ]
+                  },
+                  {
+                      "id":  "prop-023",
+                      "asset":  "rock_large",
+                      "position":  [
+                                       704,
+                                       1120
+                                   ]
+                  },
+                  {
+                      "id":  "prop-024",
+                      "asset":  "fence",
+                      "position":  [
+                                       336,
+                                       1168
+                                   ]
+                  },
+                  {
+                      "id":  "prop-025",
+                      "asset":  "barrel",
+                      "position":  [
+                                       385,
+                                       1168
+                                   ]
+                  },
+                  {
+                      "id":  "prop-026",
+                      "asset":  "flowers",
+                      "position":  [
+                                       320,
+                                       808
+                                   ]
+                  },
+                  {
+                      "id":  "prop-027",
+                      "asset":  "flowers",
+                      "position":  [
+                                       512,
+                                       748
+                                   ]
+                  },
+                  {
+                      "id":  "prop-028",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       792,
+                                       192
+                                   ]
+                  },
+                  {
+                      "id":  "prop-029",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       960,
+                                       224
+                                   ]
+                  },
+                  {
+                      "id":  "prop-030",
+                      "asset":  "pine",
+                      "position":  [
+                                       1024,
+                                       352
+                                   ]
+                  },
+                  {
+                      "id":  "prop-031",
+                      "asset":  "flowers",
+                      "position":  [
+                                       880,
+                                       416
+                                   ]
+                  },
+                  {
+                      "id":  "prop-032",
+                      "asset":  "bush_green",
+                      "position":  [
+                                       960,
+                                       464
+                                   ]
+                  },
+                  {
+                      "id":  "prop-033",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       864,
+                                       544
+                                   ]
+                  },
+                  {
+                      "id":  "prop-034",
+                      "asset":  "rock_small",
+                      "position":  [
+                                       960,
+                                       560
+                                   ]
+                  },
+                  {
+                      "id":  "prop-035",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       1520,
+                                       600
+                                   ]
+                  },
+                  {
+                      "id":  "prop-036",
+                      "asset":  "tree_pink",
+                      "position":  [
+                                       1664,
+                                       576
+                                   ]
+                  },
+                  {
+                      "id":  "prop-037",
+                      "asset":  "pine",
+                      "position":  [
+                                       1840,
+                                       528
+                                   ]
+                  },
+                  {
+                      "id":  "prop-038",
+                      "asset":  "rock_large",
+                      "position":  [
+                                       1600,
+                                       1088
+                                   ]
+                  },
+                  {
+                      "id":  "prop-039",
+                      "asset":  "flowers",
+                      "position":  [
+                                       1472,
+                                       896
+                                   ]
+                  },
+                  {
+                      "id":  "prop-040",
+                      "asset":  "bush_green",
+                      "position":  [
+                                       1680,
+                                       864
+                                   ]
+                  },
+                  {
+                      "id":  "prop-041",
+                      "asset":  "fence",
+                      "position":  [
+                                       992,
+                                       1008
+                                   ]
+                  },
+                  {
+                      "id":  "prop-042",
+                      "asset":  "barrel",
+                      "position":  [
+                                       1024,
+                                       1040
+                                   ]
+                  },
+                  {
+                      "id":  "prop-043",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       800,
+                                       864
+                                   ]
+                  },
+                  {
+                      "id":  "prop-044",
+                      "asset":  "pine",
+                      "position":  [
+                                       912,
+                                       928
+                                   ]
+                  },
+                  {
+                      "id":  "prop-045",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       800,
+                                       1088
+                                   ]
+                  },
+                  {
+                      "id":  "prop-046",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       928,
+                                       1168
+                                   ]
+                  },
+                  {
+                      "id":  "prop-047",
+                      "asset":  "pine",
+                      "position":  [
+                                       1088,
+                                       1120
+                                   ]
+                  },
+                  {
+                      "id":  "prop-048",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       1200,
+                                       960
+                                   ]
+                  },
+                  {
+                      "id":  "prop-049",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       1280,
+                                       1088
+                                   ]
+                  },
+                  {
+                      "id":  "prop-050",
+                      "asset":  "pine",
+                      "position":  [
+                                       1408,
+                                       1184
+                                   ]
+                  },
+                  {
+                      "id":  "prop-051",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       1504,
+                                       1120
+                                   ]
+                  },
+                  {
+                      "id":  "prop-052",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       1664,
+                                       1200
+                                   ]
+                  },
+                  {
+                      "id":  "prop-053",
+                      "asset":  "pine",
+                      "position":  [
+                                       1776,
+                                       1056
+                                   ]
+                  },
+                  {
+                      "id":  "prop-054",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       1872,
+                                       1184
+                                   ]
+                  },
+                  {
+                      "id":  "prop-055",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       1840,
+                                       864
+                                   ]
+                  },
+                  {
+                      "id":  "prop-056",
+                      "asset":  "pine",
+                      "position":  [
+                                       1712,
+                                       720
+                                   ]
+                  },
+                  {
+                      "id":  "prop-057",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       1536,
+                                       160
+                                   ]
+                  },
+                  {
+                      "id":  "prop-058",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       1728,
+                                       128
+                                   ]
+                  },
+                  {
+                      "id":  "prop-059",
+                      "asset":  "pine",
+                      "position":  [
+                                       1840,
+                                       176
+                                   ]
+                  },
+                  {
+                      "id":  "prop-060",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       1152,
+                                       112
+                                   ]
+                  },
+                  {
+                      "id":  "prop-061",
+                      "asset":  "tree_green",
+                      "position":  [
+                                       1056,
+                                       176
+                                   ]
+                  },
+                  {
+                      "id":  "prop-062",
+                      "asset":  "pine",
+                      "position":  [
+                                       1200,
+                                       512
+                                   ]
+                  },
+                  {
+                      "id":  "prop-063",
+                      "asset":  "tree_gold",
+                      "position":  [
+                                       1312,
+                                       576
+                                   ]
+                  }
+              ],
+    "monsterSpawns":  [
+                          {
+                              "id":  "clearing-slime",
+                              "species":  "Slime",
+                              "position":  [
+                                               448,
+                                               512
+                                           ],
+                              "maxHp":  35,
+                              "moveSpeedTiles":  0.8,
+                              "roamRadiusTiles":  3,
+                              "idleSeconds":  [
+                                                  1,
+                                                  3
+                                              ],
+                              "respawnSeconds":  8,
+                              "level":  1,
+                              "baseExp":  10
+                          },
+                          {
+                              "id":  "east-mushroom",
+                              "species":  "Mushroom",
+                              "position":  [
+                                               880,
+                                               336
+                                           ],
+                              "maxHp":  45,
+                              "moveSpeedTiles":  0.6,
+                              "roamRadiusTiles":  4,
+                              "idleSeconds":  [
+                                                  1,
+                                                  3
+                                              ],
+                              "respawnSeconds":  8,
+                              "level":  3,
+                              "baseExp":  31
+                          },
+                          {
+                              "id":  "forest-wolf",
+                              "species":  "Wolf",
+                              "position":  [
+                                               1536,
+                                               944
+                                           ],
+                              "maxHp":  65,
+                              "moveSpeedTiles":  1.3,
+                              "roamRadiusTiles":  5,
+                              "idleSeconds":  [
+                                                  1,
+                                                  3
+                                              ],
+                              "respawnSeconds":  8,
+                              "level":  4,
+                              "baseExp":  52
+                          },
+                          {
+                              "id":  "south-sprout",
+                              "species":  "Sprout",
+                              "position":  [
+                                               272,
+                                               736
+                                           ],
+                              "maxHp":  40,
+                              "moveSpeedTiles":  0.9,
+                              "roamRadiusTiles":  3,
+                              "idleSeconds":  [
+                                                  1,
+                                                  3
+                                              ],
+                              "respawnSeconds":  8,
+                              "level":  2,
+                              "baseExp":  18
+                          },
+                          {
+                              "id":  "deep-forest-wolf",
+                              "species":  "Wolf",
+                              "position":  [
+                                               1696,
+                                               1056
+                                           ],
+                              "maxHp":  95,
+                              "moveSpeedTiles":  1.2,
+                              "roamRadiusTiles":  3,
+                              "idleSeconds":  [
+                                                  1,
+                                                  3
+                                              ],
+                              "respawnSeconds":  8,
+                              "level":  6,
+                              "baseExp":  90
+                          }
+                      ]
+}

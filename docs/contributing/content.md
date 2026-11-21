@@ -16,7 +16,7 @@ For each asset record provenance, license or internal rights reference, creator/
 4. Review source, export and manifest together. Commit text `.tscn`, `.tres` and `.uid` files normally; binary formats are tracked by `.gitattributes` through LFS.
 5. If exports move to an artifact store later, pin immutable content hashes in the manifest and fetch them before engine import. Never depend on a floating `latest` asset bundle.
 
-Large scenes should compose owned child scenes. Shared materials, skeletons and animation libraries have named owners; modifying them requires affected consumers to validate. Animation events may trigger presentation effects, but damage and authoritative timing remain server decisions. Collision meshes must be reviewed separately from visual meshes. Keep 3D scale at one Godot unit per meter; the existing 2D duel uses pixels and is not a world-physics convention. Define per-platform triangle/texture/bone/audio budgets with technical art before a collection is accepted; none are measured yet.
+Large scenes should compose owned child scenes. Shared materials, skeletons and animation libraries have named owners; modifying them requires affected consumers to validate. Animation events may trigger presentation effects, but damage and authoritative timing remain server decisions. Collision meshes must be reviewed separately from visual meshes. Keep 3D scale at one Godot unit per meter. The 2D world uses 32 pixels per tile, defined in CombatBalance; authored map geometry must follow that convention. Define per-platform triangle/texture/bone/audio budgets with technical art before a collection is accepted; none are measured yet.
 
 ## Story and localization
 

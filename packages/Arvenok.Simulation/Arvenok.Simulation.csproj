@@ -4,5 +4,18 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../Arvenok.Contracts/Arvenok.Contracts.csproj" />
+    <EmbeddedResource Include="../../content/worlds/woodvale-forest.json" LogicalName="Arvenok.World.Forest" />
+    <EmbeddedResource Include="../../content/progression/woodvale-v1.json" LogicalName="Arvenok.Progression" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-skills-v02/data/effect_rules_v02.json" LogicalName="Arvenok.Skills.Effects" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-skills-v02/data/new_equipment_v02.json" LogicalName="Arvenok.Skills.Equipment" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-skills-v02/data/new_skills_v02.json" LogicalName="Arvenok.Skills.Skills" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-skills-v02/data/skill_tree_v02.json" LogicalName="Arvenok.Skills.Tree" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-skills-v02/data/spell_scrolls_v02.json" LogicalName="Arvenok.Skills.Scrolls" />
+    <EmbeddedResource Include="../../content/items/skills-v02-loot-overrides.json" LogicalName="Arvenok.Skills.LootOverrides" />
+    <EmbeddedResource Include="../../content/items/catalog-v1.json" LogicalName="Arvenok.Items" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-loot-v1/data/recipes.json" LogicalName="Arvenok.Economy.Recipes" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-loot-v1/data/loot_tables.json" LogicalName="Arvenok.Economy.Loot" />
+    <EmbeddedResource Include="../../content/art-source/ui/arvenok-loot-v1/data/gameplay_rules.json" LogicalName="Arvenok.Economy.Rules" />
+    <EmbeddedResource Include="../../content/art-source/art2d/woodvale/manifest.json" LogicalName="Arvenok.Art.Woodvale" />
   </ItemGroup>
 </Project>

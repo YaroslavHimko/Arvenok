@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "experienceToNextLevel": [
+    80,
+    127,
+    198,
+    293,
+    412,
+    555,
+    722,
+    913,
+    1128
+  ],
+  "rankRequiredLevels": [
+    1,
+    2,
+    4,
+    7
+  ],
+  "skills": [
+    {
+      "id": "warrior.crushing-blow",
+      "class": "Warrior",
+      "slot": "Primary",
+      "damage": [
+        18,
+        20,
+        22,
+        24
+      ]
+    },
+    {
+      "id": "warrior.rush",
+      "class": "Warrior",
+      "slot": "Mobility",
+      "rangeTiles": [
+        4,
+        4.2,
+        4.4,
+        4.6
+      ]
+    },
+    {
+      "id": "warrior.shield-bash",
+      "class": "Warrior",
+      "slot": "Interrupt",
+      "damage": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "cooldownSeconds": [
+        12,
+        11.5,
+        11,
+        10.5
+      ]
+    },
+    {
+      "id": "warrior.guard",
+      "class": "Warrior",
+      "slot": "Defense",
+      "effectSeconds": [
+        2,
+        2.2,
+        2.4,
+        2.6
+      ]
+    },
+    {
+      "id": "mage.firebolt",
+      "class": "Mage",
+      "slot": "Primary",
+      "damage": [
+        20,
+        22,
+        24,
+        26
+      ]
+    },
+    {
+      "id": "mage.blink",
+      "class": "Mage",
+      "slot": "Mobility",
+      "rangeTiles": [
+        3.2,
+        3.4,
+        3.6,
+        3.8
+      ]
+    },
+    {
+      "id": "mage.counterspell",
+      "class": "Mage",
+      "slot": "Interrupt",
+      "damage": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "cooldownSeconds": [
+        12,
+        11.5,
+        11,
+        10.5
+      ]
+    },
+    {
+      "id": "mage.arcane-ward",
+      "class": "Mage",
+      "slot": "Defense",
+      "effectSeconds": [
+        2,
+        2.2,
+        2.4,
+        2.6
+      ]
+    },
+    {
+      "id": "archer.power-shot",
+      "class": "Archer",
+      "slot": "Primary",
+      "damage": [
+        19,
+        21,
+        23,
+        25
+      ]
+    },
+    {
+      "id": "archer.backstep",
+      "class": "Archer",
+      "slot": "Mobility",
+      "rangeTiles": [
+        3.2,
+        3.4,
+        3.6,
+        3.8
+      ]
+    },
+    {
+      "id": "archer.disrupting-arrow",
+      "class": "Archer",
+      "slot": "Interrupt",
+      "damage": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "cooldownSeconds": [
+        12,
+        11.5,
+        11,
+        10.5
+      ]
+    },
+    {
+      "id": "archer.evasive-stance",
+      "class": "Archer",
+      "slot": "Defense",
+      "effectSeconds": [
+        2,
+        2.2,
+        2.4,
+        2.6
+      ]
+    }
+  ]
+}

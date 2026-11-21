@@ -1,0 +1,202 @@
+{
+  "schema": "design-reference-v0.2",
+  "current_level_cap": 10,
+  "starting_core_skill_ranks": 1,
+  "legacy_core_max_rank": 4,
+  "compatibility_note": "Map existing skill IDs and preserve prior purchased ranks and spent points; do not grant duplicate points",
+  "branches_are_exclusive": false,
+  "nodes": [
+    {
+      "node_id": "warrior.guardian.shield_mastery",
+      "class": "warrior",
+      "branch": "guardian",
+      "skill_id": "shield_mastery",
+      "type": "passive",
+      "max_rank": 1,
+      "level_requirement": 4,
+      "point_cost": 1,
+      "prerequisite": {
+        "skill": "guard",
+        "rank": 2
+      },
+      "requires_item": null,
+      "icon": "assets/skills/shield_mastery.png"
+    },
+    {
+      "node_id": "warrior.guardian.perfect_block",
+      "class": "warrior",
+      "branch": "guardian",
+      "skill_id": "perfect_block",
+      "type": "active",
+      "max_rank": 1,
+      "level_requirement": 6,
+      "point_cost": 1,
+      "prerequisite": {
+        "node": "warrior.guardian.shield_mastery",
+        "rank": 1
+      },
+      "requires_item": "scroll.skill.warrior.perfect_block",
+      "icon": "assets/skills/perfect_block.png"
+    },
+    {
+      "node_id": "warrior.reaver.sanguine_edge",
+      "class": "warrior",
+      "branch": "reaver",
+      "skill_id": "sanguine_edge",
+      "type": "passive",
+      "max_rank": 1,
+      "level_requirement": 4,
+      "point_cost": 1,
+      "prerequisite": {
+        "skill": "crushing_blow",
+        "rank": 2
+      },
+      "requires_item": null,
+      "icon": "assets/skills/sanguine_edge.png"
+    },
+    {
+      "node_id": "warrior.reaver.sunder_strike",
+      "class": "warrior",
+      "branch": "reaver",
+      "skill_id": "sunder_strike",
+      "type": "active",
+      "max_rank": 1,
+      "level_requirement": 6,
+      "point_cost": 1,
+      "prerequisite": {
+        "node": "warrior.reaver.sanguine_edge",
+        "rank": 1
+      },
+      "requires_item": "scroll.skill.warrior.sunder_strike",
+      "icon": "assets/skills/sunder_strike.png"
+    },
+    {
+      "node_id": "mage.ember.embers",
+      "class": "mage",
+      "branch": "ember",
+      "skill_id": "embers",
+      "type": "passive",
+      "max_rank": 1,
+      "level_requirement": 4,
+      "point_cost": 1,
+      "prerequisite": {
+        "skill": "firebolt",
+        "rank": 2
+      },
+      "requires_item": null,
+      "icon": "assets/skills/embers.png"
+    },
+    {
+      "node_id": "mage.ember.flame_lance",
+      "class": "mage",
+      "branch": "ember",
+      "skill_id": "flame_lance",
+      "type": "active",
+      "max_rank": 1,
+      "level_requirement": 6,
+      "point_cost": 1,
+      "prerequisite": {
+        "node": "mage.ember.embers",
+        "rank": 1
+      },
+      "requires_item": "scroll.skill.mage.flame_lance",
+      "icon": "assets/skills/flame_lance.png"
+    },
+    {
+      "node_id": "mage.aegis.ward_weaving",
+      "class": "mage",
+      "branch": "aegis",
+      "skill_id": "ward_weaving",
+      "type": "passive",
+      "max_rank": 1,
+      "level_requirement": 4,
+      "point_cost": 1,
+      "prerequisite": {
+        "skill": "arcane_ward",
+        "rank": 2
+      },
+      "requires_item": null,
+      "icon": "assets/skills/ward_weaving.png"
+    },
+    {
+      "node_id": "mage.aegis.arcane_shell",
+      "class": "mage",
+      "branch": "aegis",
+      "skill_id": "arcane_shell",
+      "type": "active",
+      "max_rank": 1,
+      "level_requirement": 6,
+      "point_cost": 1,
+      "prerequisite": {
+        "node": "mage.aegis.ward_weaving",
+        "rank": 1
+      },
+      "requires_item": "scroll.skill.mage.arcane_shell",
+      "icon": "assets/skills/arcane_shell.png"
+    },
+    {
+      "node_id": "archer.marksman.keen_eye",
+      "class": "archer",
+      "branch": "marksman",
+      "skill_id": "keen_eye",
+      "type": "passive",
+      "max_rank": 1,
+      "level_requirement": 4,
+      "point_cost": 1,
+      "prerequisite": {
+        "skill": "power_shot",
+        "rank": 2
+      },
+      "requires_item": null,
+      "icon": "assets/skills/keen_eye.png"
+    },
+    {
+      "node_id": "archer.marksman.piercing_shot",
+      "class": "archer",
+      "branch": "marksman",
+      "skill_id": "piercing_shot",
+      "type": "active",
+      "max_rank": 1,
+      "level_requirement": 6,
+      "point_cost": 1,
+      "prerequisite": {
+        "node": "archer.marksman.keen_eye",
+        "rank": 1
+      },
+      "requires_item": "scroll.skill.archer.piercing_shot",
+      "icon": "assets/skills/piercing_shot.png"
+    },
+    {
+      "node_id": "archer.skirmisher.light_footwork",
+      "class": "archer",
+      "branch": "skirmisher",
+      "skill_id": "light_footwork",
+      "type": "passive",
+      "max_rank": 1,
+      "level_requirement": 4,
+      "point_cost": 1,
+      "prerequisite": {
+        "skill": "backstep",
+        "rank": 2
+      },
+      "requires_item": null,
+      "icon": "assets/skills/light_footwork.png"
+    },
+    {
+      "node_id": "archer.skirmisher.evasive_cut",
+      "class": "archer",
+      "branch": "skirmisher",
+      "skill_id": "evasive_cut",
+      "type": "active",
+      "max_rank": 1,
+      "level_requirement": 6,
+      "point_cost": 1,
+      "prerequisite": {
+        "node": "archer.skirmisher.light_footwork",
+        "rank": 1
+      },
+      "requires_item": "scroll.skill.archer.evasive_cut",
+      "icon": "assets/skills/evasive_cut.png"
+    }
+  ]
+}

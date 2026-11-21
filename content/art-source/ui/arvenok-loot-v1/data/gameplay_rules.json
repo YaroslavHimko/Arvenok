@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "equipment_slots": [
+    "weapon",
+    "body"
+  ],
+  "require_class_match": true,
+  "allow_equip_in_combat": false,
+  "out_of_combat_seconds": 5,
+  "damage_bonus": "Add flat_damage once to each completed damaging basic attack or skill. Never once per animation frame. Single-target only in v0.1.",
+  "health_bonus": "Add max_hp to maximum HP. Preserve current HP on equip; clamp to new maximum on unequip. Never heal on equip.",
+  "loot_protection_seconds": 20,
+  "loot_public_seconds_after_protection": 100,
+  "loot_pickup_range_tiles": 2.0,
+  "loot_owner_policy": "Highest eligible non-disconnected player damage contributor, ties stable by player identity; party handling deferred.",
+  "loot_looting": "Ground loot items exist as server-owned world entities; no auto-add on kill.",
+  "recipe_behavior": "One-use scroll. Use action attempts immediate crafting; on success scroll and ingredients consumed atomically and output inserted. On failure nothing changes. Single-click selection reveals ingredient checklist.",
+  "no_crafting_stations_for_v1": true,
+  "no_random_crafting_failures": true,
+  "server_authority": true,
+  "max_stack_default_materials": 999,
+  "max_stack_equipment_recipe": 1
+}

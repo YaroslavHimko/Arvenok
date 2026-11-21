@@ -1,0 +1,49 @@
+{
+  "pack": "Woodvale XP UI v0.1",
+  "base": "ui/",
+  "artwork_role": "prototype decorations, not functional controls",
+  "assets": [
+    {
+      "file": "ui/exp_fill.png",
+      "width": 645,
+      "height": 104,
+      "format": "RGBA"
+    },
+    {
+      "file": "ui/exp_frame.png",
+      "width": 832,
+      "height": 188,
+      "format": "RGBA"
+    },
+    {
+      "file": "ui/exp_sparkles.png",
+      "width": 323,
+      "height": 316,
+      "format": "RGBA"
+    },
+    {
+      "file": "ui/level_badge.png",
+      "width": 394,
+      "height": 401,
+      "format": "RGBA"
+    },
+    {
+      "file": "ui/level_up_effect.png",
+      "width": 532,
+      "height": 367,
+      "format": "RGBA"
+    },
+    {
+      "file": "ui/skill_point_icon.png",
+      "width": 344,
+      "height": 288,
+      "format": "RGBA"
+    },
+    {
+      "file": "ui/upgrade_panel.png",
+      "width": 606,
+      "height": 347,
+      "format": "RGBA"
+    }
+  ]
+}

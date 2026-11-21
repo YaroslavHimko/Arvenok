@@ -1,0 +1,318 @@
+{
+  "pack": "Woodvale Forest Starter Art 0.1",
+  "tile_size_px": 32,
+  "terrain_atlas": "assets/terrain/terrain_atlas.png",
+  "terrain_columns": 6,
+  "terrain_rows": 4,
+  "terrain_tiles": {
+    "grass": {
+      "atlas_xy": [
+        0,
+        0
+      ],
+      "walkable": true
+    },
+    "grass_alt": {
+      "atlas_xy": [
+        1,
+        0
+      ],
+      "walkable": true
+    },
+    "grass_bright": {
+      "atlas_xy": [
+        2,
+        0
+      ],
+      "walkable": true
+    },
+    "flowers": {
+      "atlas_xy": [
+        3,
+        0
+      ],
+      "walkable": true
+    },
+    "grass_dark": {
+      "atlas_xy": [
+        4,
+        0
+      ],
+      "walkable": true
+    },
+    "moss": {
+      "atlas_xy": [
+        5,
+        0
+      ],
+      "walkable": true
+    },
+    "dirt": {
+      "atlas_xy": [
+        0,
+        1
+      ],
+      "walkable": true
+    },
+    "dirt_alt": {
+      "atlas_xy": [
+        1,
+        1
+      ],
+      "walkable": true
+    },
+    "trail": {
+      "atlas_xy": [
+        2,
+        1
+      ],
+      "walkable": true
+    },
+    "sand": {
+      "atlas_xy": [
+        3,
+        1
+      ],
+      "walkable": true
+    },
+    "stone": {
+      "atlas_xy": [
+        4,
+        1
+      ],
+      "walkable": true
+    },
+    "cobble": {
+      "atlas_xy": [
+        5,
+        1
+      ],
+      "walkable": true
+    },
+    "water_0": {
+      "atlas_xy": [
+        0,
+        2
+      ],
+      "walkable": false
+    },
+    "water_1": {
+      "atlas_xy": [
+        1,
+        2
+      ],
+      "walkable": false
+    },
+    "water_2": {
+      "atlas_xy": [
+        2,
+        2
+      ],
+      "walkable": false
+    },
+    "water_3": {
+      "atlas_xy": [
+        3,
+        2
+      ],
+      "walkable": false
+    },
+    "water_shallow": {
+      "atlas_xy": [
+        4,
+        2
+      ],
+      "walkable": false
+    },
+    "water_lily": {
+      "atlas_xy": [
+        5,
+        2
+      ],
+      "walkable": false
+    },
+    "shore_n": {
+      "atlas_xy": [
+        0,
+        3
+      ],
+      "walkable": false
+    },
+    "shore_e": {
+      "atlas_xy": [
+        1,
+        3
+      ],
+      "walkable": false
+    },
+    "shore_s": {
+      "atlas_xy": [
+        2,
+        3
+      ],
+      "walkable": false
+    },
+    "shore_w": {
+      "atlas_xy": [
+        3,
+        3
+      ],
+      "walkable": false
+    },
+    "wood": {
+      "atlas_xy": [
+        4,
+        3
+      ],
+      "walkable": true
+    },
+    "reeds": {
+      "atlas_xy": [
+        5,
+        3
+      ],
+      "walkable": true
+    }
+  },
+  "characters": {
+    "frame_size_px": [
+      96,
+      96
+    ],
+    "directions": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "frames": {
+      "warrior": {
+        "down": "assets/characters/warrior/idle_down.png",
+        "left": "assets/characters/warrior/idle_left.png",
+        "right": "assets/characters/warrior/idle_right.png",
+        "up": "assets/characters/warrior/idle_up.png"
+      },
+      "mage": {
+        "down": "assets/characters/mage/idle_down.png",
+        "left": "assets/characters/mage/idle_left.png",
+        "right": "assets/characters/mage/idle_right.png",
+        "up": "assets/characters/mage/idle_up.png"
+      },
+      "archer": {
+        "down": "assets/characters/archer/idle_down.png",
+        "left": "assets/characters/archer/idle_left.png",
+        "right": "assets/characters/archer/idle_right.png",
+        "up": "assets/characters/archer/idle_up.png"
+      }
+    },
+    "animation_status": "directional idle frames only; no actual walk, attack, cast or death animations"
+  },
+  "monsters": {
+    "slime": {
+      "file": "assets/monsters/slime.png",
+      "image_size": [
+        33,
+        32
+      ],
+      "visual_only": true
+    },
+    "mushroom": {
+      "file": "assets/monsters/mushroom.png",
+      "image_size": [
+        25,
+        39
+      ],
+      "visual_only": true
+    },
+    "wolf": {
+      "file": "assets/monsters/wolf.png",
+      "image_size": [
+        67,
+        39
+      ],
+      "visual_only": true
+    },
+    "sprout": {
+      "file": "assets/monsters/sprout.png",
+      "image_size": [
+        52,
+        43
+      ],
+      "visual_only": true
+    }
+  },
+  "props": {
+    "tree_green": {
+      "file": "assets/props/tree_green.png",
+      "image_size": [
+        79,
+        95
+      ]
+    },
+    "tree_gold": {
+      "file": "assets/props/tree_gold.png",
+      "image_size": [
+        73,
+        92
+      ]
+    },
+    "tree_pink": {
+      "file": "assets/props/tree_pink.png",
+      "image_size": [
+        79,
+        95
+      ]
+    },
+    "pine": {
+      "file": "assets/props/pine.png",
+      "image_size": [
+        47,
+        99
+      ]
+    },
+    "rock_large": {
+      "file": "assets/props/rock_large.png",
+      "image_size": [
+        68,
+        48
+      ]
+    },
+    "rock_small": {
+      "file": "assets/props/rock_small.png",
+      "image_size": [
+        28,
+        25
+      ]
+    },
+    "bush_green": {
+      "file": "assets/props/bush_green.png",
+      "image_size": [
+        47,
+        43
+      ]
+    },
+    "flowers": {
+      "file": "assets/props/flowers.png",
+      "image_size": [
+        40,
+        34
+      ]
+    },
+    "fence": {
+      "file": "assets/props/fence.png",
+      "image_size": [
+        81,
+        26
+      ]
+    },
+    "barrel": {
+      "file": "assets/props/barrel.png",
+      "image_size": [
+        30,
+        31
+      ]
+    }
+  },
+  "origins": "world entity root = ground contact / feet; sprites should be offset upward so bottom pixels coincide with root",
+  "source_art": "source_art/class_direction_reference.png"
+}

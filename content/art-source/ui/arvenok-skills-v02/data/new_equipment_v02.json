@@ -1,0 +1,169 @@
+{
+  "schema": "design-reference-v0.2",
+  "notes": [
+    "Extend the existing item/equipment catalog; do not replace equipment from previous pack",
+    "One handed swords and daggers occupy MainHand only",
+    "Two handed swords, bows and staves occupy MainHand and reserve OffHand",
+    "Only Warrior may equip shield in OffHand",
+    "No dual wield in v0.2",
+    "Mainhand+Offhand swap must be atomic and reject if displaced items cannot fit in backpack",
+    "All damage bonuses apply once per server-resolved direct hit or skill, never per animation frame"
+  ],
+  "items": [
+    {
+      "id": "equipment.weapon.weathered_greatsword",
+      "name": "Weathered Greatsword",
+      "class": [
+        "warrior"
+      ],
+      "weapon_type": "two_handed_sword",
+      "level_required": 2,
+      "bonus_direct_damage": 2,
+      "basic_attack_interval_s": 1.4,
+      "uses_offhand": true,
+      "icon": "assets/gear/greatsword.png",
+      "rarity": "common"
+    },
+    {
+      "id": "equipment.weapon.forged_greatsword",
+      "name": "Forged Greatsword",
+      "class": [
+        "warrior"
+      ],
+      "weapon_type": "two_handed_sword",
+      "level_required": 6,
+      "bonus_direct_damage": 3,
+      "basic_attack_interval_s": 1.4,
+      "uses_offhand": true,
+      "icon": "assets/gear/greatsword.png",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "equipment.weapon.hunters_dagger",
+      "name": "Hunter’s Dagger",
+      "class": [
+        "warrior",
+        "archer"
+      ],
+      "weapon_type": "dagger",
+      "level_required": 2,
+      "bonus_direct_damage": 1,
+      "basic_attack_interval_s": 1.15,
+      "uses_offhand": false,
+      "range_tiles": 1.5,
+      "icon": "assets/gear/dagger.png",
+      "rarity": "common"
+    },
+    {
+      "id": "equipment.weapon.nightsteel_dagger",
+      "name": "Nightsteel Dagger",
+      "class": [
+        "warrior",
+        "archer"
+      ],
+      "weapon_type": "dagger",
+      "level_required": 6,
+      "bonus_direct_damage": 2,
+      "basic_attack_interval_s": 1.15,
+      "uses_offhand": false,
+      "range_tiles": 1.5,
+      "icon": "assets/gear/dagger.png",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "equipment.shield.training_shield",
+      "name": "Training Shield",
+      "class": [
+        "warrior"
+      ],
+      "weapon_type": "shield",
+      "slot": "OffHand",
+      "level_required": 1,
+      "bonus_direct_damage": 0,
+      "bonus_max_hp": 0,
+      "icon": "assets/gear/shield.png",
+      "rarity": "common",
+      "note": "New Warrior starter shield once only if no equivalent exists in current item catalog; fallback world loot source"
+    }
+  ],
+  "crafting_recipe_additions": [
+    {
+      "recipe_id": "craft.forged_greatsword",
+      "scroll_item_id": "recipe.forged_greatsword",
+      "scroll_icon": "assets/gear/spell_scroll.png",
+      "output_item_id": "equipment.weapon.forged_greatsword",
+      "ingredients": [
+        {
+          "item_id": "material.iron_ore",
+          "quantity": 12
+        },
+        {
+          "item_id": "material.wolf_fang",
+          "quantity": 8
+        },
+        {
+          "item_id": "material.warrior_crest",
+          "quantity": 1
+        }
+      ],
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true
+    },
+    {
+      "recipe_id": "craft.nightsteel_dagger",
+      "scroll_item_id": "recipe.nightsteel_dagger",
+      "scroll_icon": "assets/gear/spell_scroll.png",
+      "output_item_id": "equipment.weapon.nightsteel_dagger",
+      "ingredients": [
+        {
+          "item_id": "material.stone_shard",
+          "quantity": 10
+        },
+        {
+          "item_id": "material.sprout_fiber",
+          "quantity": 8
+        },
+        {
+          "item_id": "material.ranger_sigil",
+          "quantity": 1
+        }
+      ],
+      "craft_time_seconds": 0,
+      "success_chance": 1.0,
+      "consumes_scroll_on_success": true
+    }
+  ],
+  "new_weapon_loot_additions": {
+    "wolf": [
+      {
+        "item_id": "equipment.weapon.weathered_greatsword",
+        "chance": 0.025
+      },
+      {
+        "item_id": "recipe.forged_greatsword",
+        "chance": 0.012
+      },
+      {
+        "item_id": "equipment.shield.training_shield",
+        "chance": 0.03
+      }
+    ],
+    "mushroom": [
+      {
+        "item_id": "equipment.weapon.hunters_dagger",
+        "chance": 0.025
+      },
+      {
+        "item_id": "recipe.nightsteel_dagger",
+        "chance": 0.012
+      }
+    ],
+    "sprout": [
+      {
+        "item_id": "equipment.weapon.hunters_dagger",
+        "chance": 0.02
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "assetId": "woodvale-combat-v01",
+  "sourceArchive": "Woodvale_Combat_Animations_v01.zip",
+  "provenance": "User-supplied extension; original manifest, handoff, README, contact sheet and illustrative preview retained here.",
+  "rightsReference": "Original pack documentation; no additional license or production art acceptance asserted.",
+  "runtimeRoot": "apps/game/Assets/Art2D/woodvale-combat",
+  "importRecipe": "Copy PNG strips byte-for-byte. Horizontal cells, lossless RGBA, no mipmaps, nearest-neighbor sampling.",
+  "cellPixels": [96, 96],
+  "framesPerSuppliedStrip": 8,
+  "feetPixel": [48, 90],
+  "dependency": "woodvale-forest-v01",
+  "quality": "Down-facing illustrated action poses; other directional actions and monster movement are procedural prototypes.",
+  "budgetStatus": "Prototype collection; no production platform budget claimed."
+}

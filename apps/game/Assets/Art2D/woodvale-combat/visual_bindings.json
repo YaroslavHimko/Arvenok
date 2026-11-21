@@ -1,0 +1,189 @@
+{
+    "schemaVersion":  1,
+    "feetPixel":  [
+                      48,
+                      90
+                  ],
+    "effectHeight":  36,
+    "hurtSeconds":  0.18,
+    "interruptSeconds":  0.32,
+    "projectilePixelsPerSecond":  1000,
+    "minProjectileSeconds":  0.08,
+    "maxProjectileSeconds":  0.22,
+    "classes":  {
+                    "Warrior":  {
+                                    "Basic":  {
+                                                  "windup":  "basic_attack",
+                                                  "release":  "basic_attack",
+                                                  "mode":  "melee",
+                                                  "effect":  "basic/sword_slash",
+                                                  "impact":  "",
+                                                  "releaseSeconds":  0.32
+                                              },
+                                    "Primary":  {
+                                                    "windup":  "cast",
+                                                    "release":  "basic_attack",
+                                                    "mode":  "melee",
+                                                    "effect":  "warrior/crushing_blow",
+                                                    "impact":  "warrior/crushing_impact",
+                                                    "releaseSeconds":  0.32
+                                                },
+                                    "Mobility":  {
+                                                     "windup":  "walk",
+                                                     "release":  "walk",
+                                                     "mode":  "trail",
+                                                     "effect":  "warrior/rush",
+                                                     "impact":  "",
+                                                     "releaseSeconds":  0.32
+                                                 },
+                                    "Interrupt":  {
+                                                      "windup":  "basic_attack",
+                                                      "release":  "basic_attack",
+                                                      "mode":  "impact",
+                                                      "effect":  "warrior/shield_bash",
+                                                      "impact":  "",
+                                                      "releaseSeconds":  0.32
+                                                  },
+                                    "Defense":  {
+                                                    "windup":  "defend",
+                                                    "release":  "defend",
+                                                    "mode":  "aura",
+                                                    "effect":  "warrior/guard",
+                                                    "impact":  "",
+                                                    "releaseSeconds":  0.32
+                                                },
+                                    "BranchOne":  {
+                                                      "windup":  "defend",
+                                                      "release":  "defend",
+                                                      "mode":  "aura",
+                                                      "effect":  "warrior/guard",
+                                                      "impact":  "",
+                                                      "releaseSeconds":  0.32
+                                                  },
+                                    "BranchTwo":  {
+                                                      "windup":  "cast",
+                                                      "release":  "basic_attack",
+                                                      "mode":  "melee",
+                                                      "effect":  "warrior/crushing_blow",
+                                                      "impact":  "warrior/crushing_impact",
+                                                      "releaseSeconds":  0.32
+                                                  }
+                                },
+                    "Mage":  {
+                                 "Basic":  {
+                                               "windup":  "basic_attack",
+                                               "release":  "basic_attack",
+                                               "mode":  "projectile",
+                                               "effect":  "basic/magic_orb",
+                                               "impact":  "",
+                                               "releaseSeconds":  0.32
+                                           },
+                                 "Primary":  {
+                                                 "windup":  "cast",
+                                                 "release":  "cast",
+                                                 "mode":  "projectile",
+                                                 "effect":  "mage/firebolt",
+                                                 "impact":  "mage/firebolt_impact",
+                                                 "releaseSeconds":  0.32
+                                             },
+                                 "Mobility":  {
+                                                  "windup":  "idle",
+                                                  "release":  "idle",
+                                                  "mode":  "blink",
+                                                  "effect":  "mage/blink",
+                                                  "impact":  "",
+                                                  "releaseSeconds":  0.32
+                                              },
+                                 "Interrupt":  {
+                                                   "windup":  "cast",
+                                                   "release":  "cast",
+                                                   "mode":  "impact",
+                                                   "effect":  "mage/counterspell",
+                                                   "impact":  "",
+                                                   "releaseSeconds":  0.32
+                                               },
+                                 "Defense":  {
+                                                 "windup":  "defend",
+                                                 "release":  "defend",
+                                                 "mode":  "aura",
+                                                 "effect":  "mage/arcane_ward",
+                                                 "impact":  "",
+                                                 "releaseSeconds":  0.32
+                                             },
+                                 "BranchOne":  {
+                                                   "windup":  "cast",
+                                                   "release":  "cast",
+                                                   "mode":  "projectile",
+                                                   "effect":  "mage/firebolt",
+                                                   "impact":  "mage/firebolt_impact",
+                                                   "releaseSeconds":  0.32
+                                               },
+                                 "BranchTwo":  {
+                                                   "windup":  "defend",
+                                                   "release":  "defend",
+                                                   "mode":  "aura",
+                                                   "effect":  "mage/arcane_ward",
+                                                   "impact":  "",
+                                                   "releaseSeconds":  0.32
+                                               }
+                             },
+                    "Archer":  {
+                                   "Basic":  {
+                                                 "windup":  "basic_attack",
+                                                 "release":  "basic_attack",
+                                                 "mode":  "projectile",
+                                                 "effect":  "basic/arrow",
+                                                 "impact":  "",
+                                                 "releaseSeconds":  0.32
+                                             },
+                                   "Primary":  {
+                                                   "windup":  "cast",
+                                                   "release":  "basic_attack",
+                                                   "mode":  "projectile",
+                                                   "effect":  "archer/power_shot",
+                                                   "impact":  "",
+                                                   "releaseSeconds":  0.32
+                                               },
+                                   "Mobility":  {
+                                                    "windup":  "walk",
+                                                    "release":  "walk",
+                                                    "mode":  "trail",
+                                                    "effect":  "archer/backstep",
+                                                    "impact":  "",
+                                                    "releaseSeconds":  0.32
+                                                },
+                                   "Interrupt":  {
+                                                     "windup":  "basic_attack",
+                                                     "release":  "basic_attack",
+                                                     "mode":  "projectile",
+                                                     "effect":  "archer/disrupting_arrow",
+                                                     "impact":  "archer/disrupting_impact",
+                                                     "releaseSeconds":  0.32
+                                                 },
+                                   "Defense":  {
+                                                   "windup":  "defend",
+                                                   "release":  "defend",
+                                                   "mode":  "aura",
+                                                   "effect":  "archer/evasive_stance",
+                                                   "impact":  "",
+                                                   "releaseSeconds":  0.32
+                                               },
+                                   "BranchOne":  {
+                                                     "windup":  "cast",
+                                                     "release":  "basic_attack",
+                                                     "mode":  "projectile",
+                                                     "effect":  "archer/power_shot",
+                                                     "impact":  "",
+                                                     "releaseSeconds":  0.32
+                                                 },
+                                   "BranchTwo":  {
+                                                     "windup":  "walk",
+                                                     "release":  "basic_attack",
+                                                     "mode":  "melee",
+                                                     "effect":  "basic/sword_slash",
+                                                     "impact":  "",
+                                                     "releaseSeconds":  0.32
+                                                 }
+                               }
+                }
+}

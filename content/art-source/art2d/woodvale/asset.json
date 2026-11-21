@@ -1,0 +1,14 @@
+{
+  "assetId": "woodvale-forest-v01",
+  "sourceArchive": "Woodvale_OpenWorld_MMO_ArtPack_v01.zip",
+  "provenance": "User-supplied pack; original manifest, handoff, README, references and source art retained here.",
+  "rightsReference": "Pack README describes project-generated artwork and requests production licensing review; no additional license is asserted by this integration.",
+  "runtimeRoot": "apps/game/Assets/Art2D/woodvale",
+  "importRecipe": "Copy assets/**/*.png byte-for-byte, retaining relative paths. Use lossless import, no mipmaps and nearest-neighbor sampling.",
+  "tileSizePixels": 32,
+  "characterCanvasPixels": [96, 96],
+  "characterFeetPixel": [48, 91],
+  "propAndMonsterOrigin": "bottom-center",
+  "animationStatus": "Four directional player idle poses; static monsters. No walk or combat animation frames supplied.",
+  "budgetStatus": "Prototype collection; no production platform budget claimed."
+}

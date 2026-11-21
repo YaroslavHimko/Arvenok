@@ -1,0 +1,75 @@
+{
+  "schema": "design-reference-v0.2",
+  "behavior": "When used, if class, prerequisites, skill points, level and inventory are valid, atomically remove scroll and one point and learn skill rank 1; otherwise consume nothing",
+  "requires_out_of_combat": true,
+  "scrolls": [
+    {
+      "id": "scroll.skill.warrior.perfect_block",
+      "skill_id": "perfect_block",
+      "class": "warrior",
+      "max_stack": 1,
+      "item_type": "spell_scroll",
+      "icon": "assets/gear/spell_scroll.png"
+    },
+    {
+      "id": "scroll.skill.warrior.sunder_strike",
+      "skill_id": "sunder_strike",
+      "class": "warrior",
+      "max_stack": 1,
+      "item_type": "spell_scroll",
+      "icon": "assets/gear/spell_scroll.png"
+    },
+    {
+      "id": "scroll.skill.mage.flame_lance",
+      "skill_id": "flame_lance",
+      "class": "mage",
+      "max_stack": 1,
+      "item_type": "spell_scroll",
+      "icon": "assets/gear/spell_scroll.png"
+    },
+    {
+      "id": "scroll.skill.mage.arcane_shell",
+      "skill_id": "arcane_shell",
+      "class": "mage",
+      "max_stack": 1,
+      "item_type": "spell_scroll",
+      "icon": "assets/gear/spell_scroll.png"
+    },
+    {
+      "id": "scroll.skill.archer.piercing_shot",
+      "skill_id": "piercing_shot",
+      "class": "archer",
+      "max_stack": 1,
+      "item_type": "spell_scroll",
+      "icon": "assets/gear/spell_scroll.png"
+    },
+    {
+      "id": "scroll.skill.archer.evasive_cut",
+      "skill_id": "evasive_cut",
+      "class": "archer",
+      "max_stack": 1,
+      "item_type": "spell_scroll",
+      "icon": "assets/gear/spell_scroll.png"
+    }
+  ],
+  "world_drop_tables": {
+    "slime": {
+      "scroll.skill.warrior.perfect_block": 0.005
+    },
+    "sprout": {
+      "scroll.skill.archer.piercing_shot": 0.015,
+      "scroll.skill.mage.arcane_shell": 0.01
+    },
+    "mushroom": {
+      "scroll.skill.mage.flame_lance": 0.018,
+      "scroll.skill.archer.evasive_cut": 0.01
+    },
+    "wolf": {
+      "scroll.skill.warrior.sunder_strike": 0.018,
+      "scroll.skill.archer.evasive_cut": 0.012,
+      "scroll.skill.warrior.perfect_block": 0.012
+    }
+  },
+  "drop_chances_are_illustrative": true,
+  "loot_note": "Add entries to existing server-owned loot tables; do not replace existing drops or EXP awards; each roll independently evaluated subject to existing loot policy"
+}

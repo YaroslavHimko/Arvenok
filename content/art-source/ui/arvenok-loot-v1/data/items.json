@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0",
+  "items": [
+    {
+      "id": "equipment.rustleaf_sword",
+      "name": "Rustleaf Sword",
+      "category": "equipment",
+      "class": "warrior",
+      "slot": "weapon",
+      "tier": 1,
+      "rarity": "common",
+      "required_level": 1,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 1,
+        "max_hp": 0
+      },
+      "icon": "assets/icons/equipment/rustleaf_sword.png",
+      "description": "A practice blade reclaimed from the forest.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.ironbark_sword",
+      "name": "Ironbark Sword",
+      "category": "equipment",
+      "class": "warrior",
+      "slot": "weapon",
+      "tier": 2,
+      "rarity": "uncommon",
+      "required_level": 5,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 2,
+        "max_hp": 0
+      },
+      "icon": "assets/icons/equipment/ironbark_sword.png",
+      "description": "A carefully forged blade built around a tempered core.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.padded_guard_coat",
+      "name": "Padded Guard Coat",
+      "category": "equipment",
+      "class": "warrior",
+      "slot": "body",
+      "tier": 1,
+      "rarity": "common",
+      "required_level": 1,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 0,
+        "max_hp": 5
+      },
+      "icon": "assets/icons/equipment/padded_guard_coat.png",
+      "description": "Sturdy protective clothing for a novice fighter.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.warden_mail",
+      "name": "Warden Mail",
+      "category": "equipment",
+      "class": "warrior",
+      "slot": "body",
+      "tier": 2,
+      "rarity": "uncommon",
+      "required_level": 5,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 0,
+        "max_hp": 10
+      },
+      "icon": "assets/icons/equipment/warden_mail.png",
+      "description": "Reinforced armor assembled from the wilds.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.willow_staff",
+      "name": "Willow Staff",
+      "category": "equipment",
+      "class": "mage",
+      "slot": "weapon",
+      "tier": 1,
+      "rarity": "common",
+      "required_level": 1,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 1,
+        "max_hp": 0
+      },
+      "icon": "assets/icons/equipment/willow_staff.png",
+      "description": "A staff infused with spores and forest energy.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.runestone_staff",
+      "name": "Runestone Staff",
+      "category": "equipment",
+      "class": "mage",
+      "slot": "weapon",
+      "tier": 2,
+      "rarity": "uncommon",
+      "required_level": 5,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 2,
+        "max_hp": 0
+      },
+      "icon": "assets/icons/equipment/runestone_staff.png",
+      "description": "A staff centered on a magical sigil.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.apprentice_robe",
+      "name": "Apprentice Robe",
+      "category": "equipment",
+      "class": "mage",
+      "slot": "body",
+      "tier": 1,
+      "rarity": "common",
+      "required_level": 1,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 0,
+        "max_hp": 5
+      },
+      "icon": "assets/icons/equipment/apprentice_robe.png",
+      "description": "Simple robes for the wilderness.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.runewoven_robe",
+      "name": "Runewoven Robe",
+      "category": "equipment",
+      "class": "mage",
+      "slot": "body",
+      "tier": 2,
+      "rarity": "uncommon",
+      "required_level": 5,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 0,
+        "max_hp": 10
+      },
+      "icon": "assets/icons/equipment/runewoven_robe.png",
+      "description": "A robe woven with traces of arcane magic.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.elm_shortbow",
+      "name": "Elm Shortbow",
+      "category": "equipment",
+      "class": "archer",
+      "slot": "weapon",
+      "tier": 1,
+      "rarity": "common",
+      "required_level": 1,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 1,
+        "max_hp": 0
+      },
+      "icon": "assets/icons/equipment/elm_shortbow.png",
+      "description": "A flexible bow made from old forest wood.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.ashwood_recurve",
+      "name": "Ashwood Recurve",
+      "category": "equipment",
+      "class": "archer",
+      "slot": "weapon",
+      "tier": 2,
+      "rarity": "uncommon",
+      "required_level": 5,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 2,
+        "max_hp": 0
+      },
+      "icon": "assets/icons/equipment/ashwood_recurve.png",
+      "description": "A tuned recurve bow with a shaped limb.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.scout_vest",
+      "name": "Scout Vest",
+      "category": "equipment",
+      "class": "archer",
+      "slot": "body",
+      "tier": 1,
+      "rarity": "common",
+      "required_level": 1,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 0,
+        "max_hp": 5
+      },
+      "icon": "assets/icons/equipment/scout_vest.png",
+      "description": "Light armor for travel through forest paths.",
+      "tradable": true
+    },
+    {
+      "id": "equipment.ranger_jerkin",
+      "name": "Ranger Jerkin",
+      "category": "equipment",
+      "class": "archer",
+      "slot": "body",
+      "tier": 2,
+      "rarity": "uncommon",
+      "required_level": 5,
+      "max_stack": 1,
+      "modifiers": {
+        "flat_damage": 0,
+        "max_hp": 10
+      },
+      "icon": "assets/icons/equipment/ranger_jerkin.png",
+      "description": "A reinforced leather vest for experienced scouts.",
+      "tradable": true
+    },
+    {
+      "id": "material.slime_gel",
+      "name": "Slime Gel",
+      "category": "monster_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/slime_gel.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.sprout_fiber",
+      "name": "Sprout Fiber",
+      "category": "monster_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/sprout_fiber.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.mushroom_spores",
+      "name": "Mushroom Spores",
+      "category": "monster_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/mushroom_spores.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.wolf_pelt",
+      "name": "Wolf Pelt",
+      "category": "monster_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/wolf_pelt.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.wolf_fang",
+      "name": "Wolf Fang",
+      "category": "monster_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/wolf_fang.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.stone_shard",
+      "name": "Stone Shard",
+      "category": "monster_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/stone_shard.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.warrior_crest",
+      "name": "Forged Blade Core",
+      "category": "equipment_key_piece",
+      "max_stack": 99,
+      "icon": "assets/icons/materials/warrior_crest.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.mage_sigil",
+      "name": "Arcane Sigil",
+      "category": "equipment_key_piece",
+      "max_stack": 99,
+      "icon": "assets/icons/materials/mage_sigil.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.ranger_sigil",
+      "name": "Hunter Sigil",
+      "category": "equipment_key_piece",
+      "max_stack": 99,
+      "icon": "assets/icons/materials/ranger_sigil.png",
+      "tradable": true,
+      "description": "Collected from creatures in the shared world."
+    },
+    {
+      "id": "material.wood_log",
+      "name": "Wood Log",
+      "category": "raw_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/wood_log.png",
+      "tradable": true,
+      "description": "Reserved for future gathering."
+    },
+    {
+      "id": "material.iron_ore",
+      "name": "Iron Ore",
+      "category": "raw_material",
+      "max_stack": 999,
+      "icon": "assets/icons/materials/iron_ore.png",
+      "tradable": true,
+      "description": "Reserved for future gathering."
+    },
+    {
+      "id": "recipe.ironbark_sword",
+      "name": "Recipe: Ironbark Sword",
+      "category": "recipe_scroll",
+      "max_stack": 1,
+      "rarity": "uncommon",
+      "icon": "assets/icons/recipes/recipe_ironbark_sword.png",
+      "output_item_id": "equipment.ironbark_sword",
+      "tradable": true,
+      "description": "Use the scroll to craft once. Ingredients and the scroll are consumed only if crafting succeeds."
+    },
+    {
+      "id": "recipe.warden_mail",
+      "name": "Recipe: Warden Mail",
+      "category": "recipe_scroll",
+      "max_stack": 1,
+      "rarity": "uncommon",
+      "icon": "assets/icons/recipes/recipe_warden_mail.png",
+      "output_item_id": "equipment.warden_mail",
+      "tradable": true,
+      "description": "Use the scroll to craft once. Ingredients and the scroll are consumed only if crafting succeeds."
+    },
+    {
+      "id": "recipe.runestone_staff",
+      "name": "Recipe: Runestone Staff",
+      "category": "recipe_scroll",
+      "max_stack": 1,
+      "rarity": "uncommon",
+      "icon": "assets/icons/recipes/recipe_runestone_staff.png",
+      "output_item_id": "equipment.runestone_staff",
+      "tradable": true,
+      "description": "Use the scroll to craft once. Ingredients and the scroll are consumed only if crafting succeeds."
+    },
+    {
+      "id": "recipe.runewoven_robe",
+      "name": "Recipe: Runewoven Robe",
+      "category": "recipe_scroll",
+      "max_stack": 1,
+      "rarity": "uncommon",
+      "icon": "assets/icons/recipes/recipe_runewoven_robe.png",
+      "output_item_id": "equipment.runewoven_robe",
+      "tradable": true,
+      "description": "Use the scroll to craft once. Ingredients and the scroll are consumed only if crafting succeeds."
+    },
+    {
+      "id": "recipe.ashwood_recurve",
+      "name": "Recipe: Ashwood Recurve",
+      "category": "recipe_scroll",
+      "max_stack": 1,
+      "rarity": "uncommon",
+      "icon": "assets/icons/recipes/recipe_ashwood_recurve.png",
+      "output_item_id": "equipment.ashwood_recurve",
+      "tradable": true,
+      "description": "Use the scroll to craft once. Ingredients and the scroll are consumed only if crafting succeeds."
+    },
+    {
+      "id": "recipe.ranger_jerkin",
+      "name": "Recipe: Ranger Jerkin",
+      "category": "recipe_scroll",
+      "max_stack": 1,
+      "rarity": "uncommon",
+      "icon": "assets/icons/recipes/recipe_ranger_jerkin.png",
+      "output_item_id": "equipment.ranger_jerkin",
+      "tradable": true,
+      "description": "Use the scroll to craft once. Ingredients and the scroll are consumed only if crafting succeeds."
+    }
+  ]
+}

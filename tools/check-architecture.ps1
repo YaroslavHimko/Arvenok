@@ -84,5 +84,7 @@ foreach ($root in @('apps', 'packages', 'tests', 'services')) {
 }
 $presentation = Get-ChildItem -LiteralPath (Join-Path $repo 'apps/game/Features') -Recurse -Filter '*.cs' -File |
     Where-Object { $_.FullName -match '[\\/]Presentation[\\/]' }
-if ($presentation | Select-String -Pattern 'Arvenok\.Simulation|\bArenaSimulation\b' -Quiet) { throw 'Presentation must consume snapshots, not authoritative simulation.' }
+# -Quiet emits one Boolean per input file; multiple false values form a truthy array in PowerShell.
+# Test actual matches so adding more presentation files cannot produce a false boundary violation.
+if ($presentation | Select-String -Pattern 'Arvenok\.Simulation|\b(?:Arena|World)Simulation\b' | Select-Object -First 1) { throw 'Presentation must consume snapshots, not authoritative simulation.' }
 Write-Host "Architecture checks passed ($($byProject.Count) projects, $($byId.Count) components)."

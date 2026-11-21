@@ -1,0 +1,304 @@
+{
+  "version": "0.2",
+  "pixel_art": true,
+  "format": "RGBA PNG",
+  "icon_size": [
+    96,
+    96
+  ],
+  "icons": [
+    {
+      "id": "crushing_blow",
+      "type": "warrior",
+      "path": "assets/skills/crushing_blow.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "rush",
+      "type": "warrior",
+      "path": "assets/skills/rush.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "shield_bash",
+      "type": "warrior",
+      "path": "assets/skills/shield_bash.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "guard",
+      "type": "warrior",
+      "path": "assets/skills/guard.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "firebolt",
+      "type": "mage",
+      "path": "assets/skills/firebolt.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "blink",
+      "type": "mage",
+      "path": "assets/skills/blink.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "counterspell",
+      "type": "mage",
+      "path": "assets/skills/counterspell.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "arcane_ward",
+      "type": "mage",
+      "path": "assets/skills/arcane_ward.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "power_shot",
+      "type": "archer",
+      "path": "assets/skills/power_shot.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "backstep",
+      "type": "archer",
+      "path": "assets/skills/backstep.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "disrupting_arrow",
+      "type": "archer",
+      "path": "assets/skills/disrupting_arrow.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "evasive_stance",
+      "type": "archer",
+      "path": "assets/skills/evasive_stance.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "perfect_block",
+      "type": "warrior",
+      "path": "assets/skills/perfect_block.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "sunder_strike",
+      "type": "warrior",
+      "path": "assets/skills/sunder_strike.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "flame_lance",
+      "type": "mage",
+      "path": "assets/skills/flame_lance.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "arcane_shell",
+      "type": "mage",
+      "path": "assets/skills/arcane_shell.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "piercing_shot",
+      "type": "archer",
+      "path": "assets/skills/piercing_shot.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "evasive_cut",
+      "type": "archer",
+      "path": "assets/skills/evasive_cut.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "shield_mastery",
+      "type": "warrior",
+      "path": "assets/skills/shield_mastery.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "sanguine_edge",
+      "type": "warrior",
+      "path": "assets/skills/sanguine_edge.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "embers",
+      "type": "mage",
+      "path": "assets/skills/embers.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "ward_weaving",
+      "type": "mage",
+      "path": "assets/skills/ward_weaving.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "keen_eye",
+      "type": "archer",
+      "path": "assets/skills/keen_eye.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "light_footwork",
+      "type": "archer",
+      "path": "assets/skills/light_footwork.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "lifesteal",
+      "type": "effect",
+      "path": "assets/skills/lifesteal.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "dodge",
+      "type": "effect",
+      "path": "assets/skills/dodge.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "parry",
+      "type": "effect",
+      "path": "assets/skills/parry.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "block",
+      "type": "effect",
+      "path": "assets/skills/block.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "greatsword",
+      "type": "gear",
+      "path": "assets/gear/greatsword.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "dagger",
+      "type": "gear",
+      "path": "assets/gear/dagger.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "shield",
+      "type": "gear",
+      "path": "assets/gear/shield.png",
+      "size_px": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "spell_scroll",
+      "type": "gear",
+      "path": "assets/gear/spell_scroll.png",
+      "size_px": [
+        96,
+        96
+      ]
+    }
+  ],
+  "notes": [
+    "UI mockup is not a live Godot scene",
+    "Skill icon images are independent from gameplay data",
+    "PNG icon edges intentionally pixelated at 2x"
+  ]
+}

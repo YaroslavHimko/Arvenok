@@ -31,7 +31,7 @@
       "owner": "platform",
       "status": "implemented",
       "project": "packages/Arvenok.Hosting/Arvenok.Hosting.csproj",
-      "dependencies": []
+      "dependencies": ["contracts"]
     },
     {
       "id": "regression-tests",
@@ -45,7 +45,7 @@
       "id": "source-art",
       "path": "content/art-source",
       "owner": "technical-art",
-      "status": "reserved"
+      "status": "implemented"
     },
     {
       "id": "narrative",

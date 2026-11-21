@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "per_character": true,
+  "number_of_bars": 1,
+  "max_bars": 3,
+  "allowed_slots_per_bar": [
+    8,
+    10,
+    12
+  ],
+  "max_slots_total": 36,
+  "orientation": [
+    "horizontal",
+    "vertical"
+  ],
+  "default_hotkeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "saved_layout_fields": [
+    "bar_index",
+    "slot_index",
+    "bound_action_id",
+    "key_binding",
+    "position_normalized",
+    "orientation",
+    "ui_scale",
+    "locked",
+    "visible",
+    "show_cooldown_numbers",
+    "show_hotkeys"
+  ],
+  "scale_min": 0.8,
+  "scale_max": 1.25,
+  "controls": [
+    "drag_drop_learned_actions",
+    "clear_slot",
+    "swap_slots",
+    "keybind_edit",
+    "toggle_extra_bar",
+    "save_and_restore_layout",
+    "lock_position"
+  ],
+  "client_data_only": [
+    "positions",
+    "hotkeys",
+    "icon positions",
+    "settings"
+  ],
+  "server_validated": [
+    "cast intent",
+    "ability known",
+    "weapon compatible",
+    "range",
+    "cast state",
+    "cooldown",
+    "line of sight",
+    "PvP legality"
+  ],
+  "display": {
+    "cooldown_shade": "clockwise radial dark overlay",
+    "cooldown_number": "1 decimal under 10s; integer otherwise",
+    "global_cooldown": "thin secondary sweep",
+    "disabled_weapon": "red bordered and tooltip",
+    "unlearned": "not assignable",
+    "charges": "future optional",
+    "castbar": "near hotbar; canceled on server events"
+  }
+}

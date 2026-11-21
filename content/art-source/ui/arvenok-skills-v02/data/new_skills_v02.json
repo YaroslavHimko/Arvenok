@@ -1,0 +1,138 @@
+{
+  "schema": "design-reference-v0.2",
+  "explicitly_add_not_replace_core": true,
+  "global_cooldown_s": 0.25,
+  "old_core_skills": {
+    "warrior": [
+      "crushing_blow",
+      "rush",
+      "shield_bash",
+      "guard"
+    ],
+    "mage": [
+      "firebolt",
+      "blink",
+      "counterspell",
+      "arcane_ward"
+    ],
+    "archer": [
+      "power_shot",
+      "backstep",
+      "disrupting_arrow",
+      "evasive_stance"
+    ]
+  },
+  "skills": [
+    {
+      "id": "perfect_block",
+      "class": "warrior",
+      "type": "active",
+      "requires": "shield",
+      "cast_s": 0,
+      "duration_s": 0.4,
+      "cooldown_s": 18,
+      "cooldown_group": "warrior_major_defense",
+      "effect": "Negate first direct frontal hit (physical or magic) during the 0.4s window; no AoE immunity; single proc only; server validates facing"
+    },
+    {
+      "id": "sunder_strike",
+      "class": "warrior",
+      "type": "active",
+      "requires": "two_handed_sword",
+      "cast_s": 0.9,
+      "cooldown_s": 10,
+      "damage": 23,
+      "range_tiles": 1.8,
+      "effect": "Interruptible targeted melee windup, direct physical damage; no stun or bleed"
+    },
+    {
+      "id": "flame_lance",
+      "class": "mage",
+      "type": "active",
+      "requires": "staff",
+      "cast_s": 1.35,
+      "cooldown_s": 10,
+      "damage": 26,
+      "range_tiles": 6.5,
+      "effect": "Interruptible single-target spell; projectile is cosmetic, impact time decided by server"
+    },
+    {
+      "id": "arcane_shell",
+      "class": "mage",
+      "type": "active",
+      "requires": "staff",
+      "cast_s": 0,
+      "cooldown_s": 18,
+      "cooldown_group": "mage_major_defense",
+      "duration_s": 2,
+      "absorb_damage": 16,
+      "effect": "Absorb up to 16 total damage in 2s, no stacking with Arcane Ward"
+    },
+    {
+      "id": "piercing_shot",
+      "class": "archer",
+      "type": "active",
+      "requires": "bow",
+      "cast_s": 1.2,
+      "cooldown_s": 10,
+      "damage": 24,
+      "range_tiles": 6.5,
+      "effect": "Interruptible single-target physical shot; no armor penetration in v0.2"
+    },
+    {
+      "id": "evasive_cut",
+      "class": "archer",
+      "type": "active",
+      "requires": "dagger",
+      "cast_s": 0.25,
+      "cooldown_s": 14,
+      "damage": 8,
+      "range_tiles": 1.5,
+      "dodge_window_s": 0.25,
+      "side_step_tiles": 1.2,
+      "effect": "Server validates side-step navigation; 0.25s window evades at most one direct targeted hit; damage only if target in melee range after step"
+    },
+    {
+      "id": "shield_mastery",
+      "class": "warrior",
+      "type": "passive",
+      "requires": "shield",
+      "effect": "Increase shield Guard physical mitigation from 45% to 50%; magic mitigation remains 35%"
+    },
+    {
+      "id": "sanguine_edge",
+      "class": "warrior",
+      "type": "passive",
+      "requires": "two_handed_sword",
+      "effect": "Life steal from direct damage: PvE 8%, PvP 5%; see cap, fractional accumulation, and exclusions in guide"
+    },
+    {
+      "id": "embers",
+      "class": "mage",
+      "type": "passive",
+      "effect": "Firebolt damage +2 versus monsters, +1 versus players; no DoT"
+    },
+    {
+      "id": "ward_weaving",
+      "class": "mage",
+      "type": "passive",
+      "effect": "Arcane Ward duration +0.2s; no stacking with Arcane Shell"
+    },
+    {
+      "id": "keen_eye",
+      "class": "archer",
+      "type": "passive",
+      "requires": "bow",
+      "effect": "Power Shot damage +2 versus monsters, +1 versus players; no extra range"
+    },
+    {
+      "id": "light_footwork",
+      "class": "archer",
+      "type": "passive",
+      "requires": "dagger",
+      "effect": "Backstep cooldown reduced from 16s to 15s when dagger-equipped"
+    }
+  ],
+  "weapon_condition_rule": "learned skill remains learned when weapon changes; activation must check compatible weapon server-side",
+  "readable_timing": "client may show estimated timer; server remains authoritative"
+}

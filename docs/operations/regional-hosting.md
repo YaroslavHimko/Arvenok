@@ -1,6 +1,6 @@
 # Regional hosting design
 
-This is a target design, not deployed infrastructure. The only host implemented today is one Godot process running one two-player arena. It accepts validated bind/port/region/shard settings. Region and shard labels currently appear in startup logs; they do not perform allocation or persistence.
+This is a target design, not deployed infrastructure. The implemented host is one Godot process running a continuously ticking outdoor world with three-class combat and development character progression saves. Its 32-player admission limit is unbenchmarked. It accepts validated bind/port/region/shard settings. Region/shard labels do not allocate infrastructure; the shard label selects a local development save directory unless `--data-dir` overrides it.
 
 ```mermaid
 flowchart TD

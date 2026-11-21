@@ -1,0 +1,13 @@
+# Item catalog and inventory v0.1
+
+`catalog-v1.json` is embedded in Simulation. Rebuild `Arvenok.sln` and restart server/clients after edits. `ItemCatalog` validates unique stable IDs, category, name/description, icon keys, stack limits, equipment metadata and capacity. Icon keys resolve to `apps/game/Assets/UI/items/<key>.<iconFormat>` (legacy SVG or supplied PNG); they are presentation references, never authority. [Loot, equipment and crafting](economy-v1.md) describes the 29 added definitions, six recipes and four loot tables.
+
+Defaults: 24 slots, six UI columns, maximum configured capacity 48. Equipment and recipes stack to 1; raw/processed/ordinary monster materials to 999; key pieces and consumables to 99. Limits are per definition. Existing characters retain saved capacity. All new characters start empty, regardless of class. No weight or expansion mechanism exists.
+
+Owned entries keep GUID, definition ID, quantity and opaque instance properties. Properties use unique keys sorted with ordinal comparison (up to 16, key length 32 and value length 256); all properties participate in stack compatibility. There are no enhancement, quality or randomized-stat mechanics. Move/swap/sort preserve identities. Split creates a new identity. Merge retains the destination identity and removes a fully consumed source.
+
+`InventoryRules.Prepare(state, request)` validates client slot intent. `Prepare(state, exchange)` is the trusted add/remove boundary. An exchange can remove several item types and add outputs atomically, checking output capacity after removals. Insertion fills compatible partial stacks before ascending empty slots. Insufficient capacity/materials leaves the exact original state. `Count` supports compatible-item availability queries. Server code commits prepared results through the world's single writer; never expose an exchange as a client RPC.
+
+Every successful operation records its ID/fingerprint and advances inventory revision. Retry the identical request, not a new request with the same ID and different arguments. Server reward/removal receipts survive reconnect and restart. See [ADR 0006](../../docs/architecture/decisions/0006-persistent-inventory.md) for journal limits, migration and future atomic ownership coordination.
+
+The ten legacy sample definitions retain their IDs and saved ownership. New package equipment can be equipped, monster drops can be picked up, and package scrolls can be consumed to craft. Legacy training gear/scrolls remain stored placeholders. Gathering, recipe learning, player item dropping, destruction, trading and selling remain outside this milestone. Tradable/droppable flags are reserved metadata.

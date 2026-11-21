@@ -9,6 +9,11 @@ $repo = Split-Path -Parent $PSScriptRoot
 Push-Location $repo
 try {
     & (Join-Path $PSScriptRoot 'check-architecture.ps1')
+    & (Join-Path $PSScriptRoot 'check-woodvale-assets.ps1')
+    & (Join-Path $PSScriptRoot 'check-combat-animations.ps1')
+    & (Join-Path $PSScriptRoot 'check-progression-assets.ps1')
+    & (Join-Path $PSScriptRoot 'check-item-assets.ps1')
+    & (Join-Path $PSScriptRoot 'check-skills-v02-assets.ps1')
     $restoreArguments = @('restore', 'Arvenok.sln', "-p:Configuration=$Configuration")
     if ($UpdateLocks) { $restoreArguments += '--force-evaluate' }
     else { $restoreArguments += '--locked-mode' }
